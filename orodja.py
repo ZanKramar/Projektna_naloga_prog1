@@ -20,7 +20,7 @@ def shrani_spletno_stran(url, ime_datoteke, vsili_prenos=False):
         if os.path.isfile(ime_datoteke) and not vsili_prenos:
             print('shranjeno že od prej!')
             return
-        r = requests.get(url,headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'})
+        r = requests.get(url, headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'})
     except requests.exceptions.ConnectionError:
         print('stran ne obstaja!')
     else:

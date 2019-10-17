@@ -15,20 +15,34 @@ vzorec = (
     r'\s*(?P<stevilka>\d+.)\n' #zaporedna številka igre
     r'\s*</span>\n' #filc
     r'\s*\n'
-    r'\s*<a href="(?P<url_do_igre>/game/.*/.*)" class="title">\n' # url za kasneje, ga bo treba kombinitati z www.metascore.com
+    r'\s*<a href="(?P<url_do_igre>/game/(?P<konzola>.*)/.*)" class="title">\n' # url za kasneje, ga bo treba kombinitati z www.metascore.com
     r'\s*.*\n'
-    r'\s*(?P<naslov> \w.*)\n' # naslov
+    r'\s*(?P<naslov>\w.*)\n' # naslov
     r'\s*.*\n' # filc h3
     r'\s*.*\n' #filc a
     r'\s*' # filc blank
     r'.*\n' #filc clamp
     r'\s*\n' # filc blank
-    r'\s*<span>(?P<Datum_izdaje>.+)<.*\n'
-
+    r'\s*<span>(?P<Datum_izdaje>.+)<.*\n' #datum izdaje
+    r'\s*\n'
+    r'\s*\n'
+    r'\s*.*\n'
+    r'\s*\n'
+    r'\s*<div class="summary">\s*\n'
+    r'\s*(?P<povzetek>.*\n?.*\n?.*\n?.*\n?)\n'
+    r'\s*.*\n'
+    r'\s*.*\n'
+    r'\s*.*\n'
+    r'\s*.*\n'
+    r'\s*.*\n'
+    r'\s*.*\n'
+    r'\s*.*\n'
+    r'(?P<test>\s*.*)\n'
+    r'\s*.*\n'
 )
-
-count = 0
+stevec = 0
 for zadetek in re.finditer(vzorec, vsebina):
     print(zadetek.groupdict())
-    count += 1
-print(count)
+    stevec += 1
+    slovar = zadetek.groupdict()
+print(stevec)
