@@ -14,3 +14,5 @@ Delovne hipoteze:
 * Ali so najboljše igre izdane za PC?
 * Dejansko stanje indie razvijalcev glede na ocene njihvoih iger.
 * Ali obstaja korelacija med žanrom igre in oceno uporabnikov?
+
+V csv-jih imam sedaj zajete vse podatke ki jih potrebujem za analizo
