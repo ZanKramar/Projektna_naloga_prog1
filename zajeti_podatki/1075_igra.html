@@ -1,0 +1,3047 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "https://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en">
+<head>
+        	<title>Owlboy for Switch Reviews - Metacritic</title>
+	
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"860f7644b8",applicationID:"2033002"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+
+    
+    <meta name="description" content="Metacritic Game Reviews, Owlboy for Switch, Owlboy is a vertical platform adventure set in the sky, where the islands of the world have been spread apart after a great calamity. You...">
+
+    
+    
+    <meta name="viewport" content="width=1024">
+
+    
+    
+
+    
+    <meta name="application-name" content="Metacritic">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/images/win8tile/76bf1426-2886-4b87-ae1c-06424b6bb8a2.png">
+
+    
+    
+                                        <meta property="og:title" content="Owlboy">
+                                                <meta property="og:type" content="game">
+                                                <meta property="og:url" content="https://www.metacritic.com/game/switch/owlboy">
+                                                <meta property="og:image" content="https://static.metacritic.com/images/products/games/0/82102b7e0667aba6f1a5a068f3898053-98.jpg">
+                                                <meta property="og:site_name" content="Metacritic">
+                                                <meta property="fb:app_id" content="123113677890173">
+                                                <meta property="twitter:site" content="@metacritic">
+                                                <meta property="twitter:creator" content="@metacritic">
+                                                <meta name="twitter:card" content="https://static.metacritic.com/images/products/games/0/82102b7e0667aba6f1a5a068f3898053-98.jpg">
+                                                <meta property="og:description" content="Owlboy for Switch game reviews &amp; Metacritic score: Owlboy is a vertical platform adventure set in the sky, where the islands of the world have been spread apart after a great calamity. You play as Otus, among th...">
+                        
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
+    
+    <link rel="stylesheet" href="/css/global.min.1576863225.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1576863195.css" type="text/css">
+
+
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    
+    <link rel="icon" href="/MC_favicon.png"/>
+
+    
+     
+        <link rel="canonical" href="https://www.metacritic.com/game/switch/owlboy" />
+        
+    
+
+    
+        
+    
+    
+    
+    
+        
+<script
+    src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+    type="text/javascript"
+    charset="UTF-8"
+    data-domain-script="47de5a53-b54f-48a3-bdf3-237764604a74">
+</script>
+
+
+<script type="application/javascript">
+    
+    (function(a){
+        var w=window,b='cbsoptanon',q='cmd',r='config';
+        w[b] = w[b] ? w[b] : {};
+        w[b][q] = w[b][q] ? w[b][q] : [];
+        w[b][r] = w[b][r] ? w[b][r] : [];
+
+        a.forEach(function(z){
+            w[b][z] = w[b][z] || function(){
+                var c=arguments;
+                w[b][q].push(function(){
+                    w[b][z].apply(w[b],c);
+                })
+            }
+        });
+    })(["onIframesReady","onFormsReady","onScriptsReady","onAdsReady"]);
+
+    //Add configs
+    window.cbsoptanon.config.push({
+        setNpaOnConsentChange: true,
+        euMaxAttempts: 25,
+        countryCodeMaxAttempts: 25,
+        oneTrustTimeout: 700,
+        enableServices: false
+    });
+
+    //Load iframes as soon as ready
+    window.cbsoptanon.onIframesReady(function(_cbsoptanon) {
+        console.log('Loading iframes');
+        _cbsoptanon.tags.load("IFRAME");
+    });
+
+    window.MetaC = window.MetaC || {};
+    MetaC.scriptExecuted = {};
+
+    function gdprConsentCallback(id, callback, callbackArgs, category, onReady) {
+        onReady = onReady || 'Scripts';
+        var opt = window.cbsoptanon['on'+onReady+'Ready'];
+        MetaC.scriptExecuted[id] = false;
+
+        opt(function(_cbsoptanon, options) {
+            //If we have categories we need to check if they are allowed
+            if (category != null) {
+                //Gets the current state of all categories
+                var checkState = function () {
+                    _cbsoptanon.ot.getState(function (targeting, performance, functional, social) {
+                        var obj = {
+                            targeting: targeting,
+                            performance: performance,
+                            functional: functional,
+                            social: social
+                        };
+
+                        if (obj[category.toLowerCase()]) {
+                            window.MetaC.scriptExecuted[id] = true;
+                            callback.apply(this, [callbackArgs, _cbsoptanon, options]);
+                        }
+                    });
+                };
+
+                checkState();
+
+                _cbsoptanon.ot.addOnConsentChangedHandler(function() {
+                    if (window.MetaC.scriptExecuted[id] !== true) {
+                        checkState();
+                    }
+                });
+            } else {
+                //Just waiting for on ready fire callback
+                callback.apply(this, [callbackArgs, _cbsoptanon, options]);
+            }
+        });
+    }
+
+    // Function to add scripts to the page
+    function append(scriptid,url,async){var d=document,sn='script',f=d.getElementsByTagName(sn)[0];if(!f)f=d.head;var s=d.createElement(sn);s.async=!0;s.id=scriptid;s.src=url;f.parentNode.insertBefore(s,f)}
+    // Set up Googletag cmd queue and init with disabling initial load
+    
+    
+    window.googletag = window.googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function() {
+        googletag.pubads().disableInitialLoad();
+    });
+    
+</script>
+
+<script src="https://production-cmp.isgprivacy.cbsi.com/dist/optanon.js" type="application/javascript" async></script>
+
+    <script type="application/javascript">
+        
+        // IX Ad Bidding
+        function loadVendorIx() { append('ix-lib',  (('https:' == document.location.protocol)?'https:':'http:') + '///js-sec.indexww.com/ht/ls-metacritic.js', true); }
+        gdprConsentCallback('ix-ad-bidding', loadVendorIx, {}, 'targeting');
+        // GPT/DFP ads
+        append('gpt-lib', (('https:' == document.location.protocol)?'https:':'http:') + '//securepubads.g.doubleclick.net/tag/js/gpt.js', true);
+        // Google Analytics
+        function loadVendorGoogleAnalytics() { append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true); }
+        gdprConsentCallback('google-analytics', loadVendorGoogleAnalytics, {}, 'performance');
+        
+        
+                    
+            window._taboola = window._taboola || [];
+            function load_vendor_taboola(){
+                _taboola.push({
+                    other : 'auto'
+                });
+                !function (e, f, u) {
+                    e.async = 1;
+                    e.src = u;
+                    f.parentNode.insertBefore(e, f);
+                }(document.createElement('script'),
+                document.getElementsByTagName('script')[0],
+                '//cdn.taboola.com/libtrc/cbsinteractive-metacritic/loader.js');
+            }
+            gdprConsentCallback('taboola', load_vendor_taboola, {}, 'targeting');
+            
+                    </script>
+
+    
+    
+    
+    <script type="text/javascript" src="/js/global.min.1576863225.js"></script>
+
+
+    <script type="text/javascript">
+        
+        
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        window.metac_ads_pushdisplay = window.metac_ads_pushdisplay || [];
+        window.metac_gallery_ads_pushdisplay = window.metac_gallery_ads_pushdisplay || [];
+        window.metac_hover_ads_pushdisplay = window.metac_hover_ads_pushdisplay || [];
+        
+    </script>
+
+    <script type="text/javascript">
+        
+    	MC_USER_LOGGED_IN = false;
+            </script>
+
+    
+    <script src="//vidtech.cbsinteractive.com/uvpjs/2.9.52/CBSI-PLAYER.js"></script>
+    <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+</head>
+
+    <body class="skybox-auto-collapse">
+
+
+
+
+<div id="site_layout">
+    <div id="masthead">
+        
+
+                    
+            <div id="nav_ad_wrapper">
+                                    
+                        
+                        <div id="nav_ad" class="ad_unit skybox-closeBtn skybox-collapseBtn skybox-videoStop">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_nav_ad = googletag.defineSlot("/8264/aw-metacritic/games",[[5,5],[7,7]], "nav_ad").addService(googletag.pubads()).setTargeting("pos", "nav").setCollapseEmptyDiv(true, true);
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("nav_ad");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+                            </div>
+        
+        <div id="content_header_wrapper">
+            <header id="top_header">
+    <nav id="primary_nav">
+        <nav id="primary_logo" class="primary_nav_item">
+            <a href="https://www.metacritic.com"><img src="/images/icons/dark_logo.png" alt="Metacritic logo"></a>
+        </nav>
+
+        <nav id="primary_search" class="primary_nav_item">
+            <div class="rounded_field">
+                <div class="imgs">
+                    <img class="inactive" src="/images/icons/search_inactive.png" alt="search">
+                    <img class="active" src="/images/icons/search_active.png" alt="search">
+                </div>
+                <div class="field innerLabel">
+                    <div class="input_wrapper">
+                        <form action="/search" method="post" autocomplete="off">
+                            <label for="primary_search_box">search...</label>
+                            <input name="search_term" id="primary_search_box" autocomplete="off"
+                                                            >
+                            <input type="hidden" name="search_filter" value="all">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="primary_search_results">
+
+            </div>
+        </nav>
+
+                    <nav id="primary_nav_item_movies" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/movie">
+                                                    Movies
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/pictures/worst-movies-of-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/worst_movies_2019-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/worst_movies_2019-180.jpg" alt="The 15 Worst Movies of 2019 Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/pictures/worst-movies-of-2019">The 15 Worst Movies of 2019</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/movie">More Reports</a>
+                                <a href="/movie">All Movies &gt;</a>
+                                <a href="/browse/movies/release-date/theaters/date">In Theaters</a>
+                                <a href="/browse/movies/release-date/coming-soon/date">Coming Soon</a>
+                                <a href="/browse/dvds/release-date/new-releases/date">New to DVD & Streaming</a>
+                                <a href="/browse/movies/score/metascore/all/filtered/netflix">Best of Netflix</a>
+                                <a href="/browse/movies/score/metascore/all/filtered/piv">Best of Amazon</a>
+                                <a href="/browse/movies/score/metascore/all/filtered">Best Movies of All Time</a>
+                                <a href="/browse/movies/genre/date">Browse Movies by Genre</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_games" class="primary_nav_item selected">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/game">
+                                                    Games
+                                            </a>
+                </span>
+
+                                    <span class="cutout_wrapper selected">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/new-free-games-playstation-xbox-pc-switch">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/freegamesREV-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/freegamesREV-180.jpg" alt="This Month's Free Games Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/new-free-games-playstation-xbox-pc-switch">This Month's Free Games</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/game">More Reports</a>
+                                <a href="/game">All Games &gt;</a>
+                                <a href="/game/playstation-4">PS4</a>
+                                <a href="/game/xbox-one">Xbox One</a>
+                                <a href="/game/pc">PC</a>
+                                <a href="/game/switch">Switch</a>
+                                <a href="/game/wii-u">Wii U</a>
+                                <a href="/game/3ds">3DS</a>
+                                <a href="/game/playstation-vita">PS Vita</a>
+                                <a href="/game/ios">iOS</a>
+                                <a href="/game/legacy">Legacy</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_tv" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/tv">
+                                                    TV
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/tv-premiere-dates">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpremieredates-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpremieredates-180.jpg" alt="2020 TV Premiere Calendar Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/tv-premiere-dates">2020 TV Premiere Calendar</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/tv">More Reports</a>
+                                <a href="/tv">All TV &gt;</a>
+                                <a href="/browse/tv/release-date/new-series/date">New Shows</a>
+                                <a href="/browse/tv/score/metascore/all/filtered/netflix">Best of Netflix</a>
+                                <a href="/browse/tv/score/metascore/all/filtered/piv">Best of Amazon</a>
+                                <a href="/browse/tv/score/metascore/all/filtered">Best TV Shows</a>
+                                <a href="/browse/tv/genre/date">Browse TV by Genre</a>
+                                <a href="/feature/tv-premiere-dates">TV Premiere Calendar</a>
+                                <a href="/browse/tv/release-date/returning-series/date">Returning Shows List</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_music" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/music">
+                                                    Music
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/best-albums-released-in-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/best_albums_2019_nickcave-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/best_albums_2019_nickcave-180.jpg" alt="The Best Albums of 2019 Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/best-albums-released-in-2019">The Best Albums of 2019</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/album">More Reports</a>
+                                <a href="/music">All Music &gt;</a>
+                                <a href="/browse/albums/release-date/new-releases/date">New Releases</a>
+                                <a href="/browse/albums/release-date/coming-soon/date">Coming Soon</a>
+                                <a href="/browse/albums/score/metascore/90day/filtered">Best New Albums</a>
+                                <a href="/browse/albums/score/metascore/all/filtered">Best Albums of All Time</a>
+                                <a href="/browse/albums/genre/date">Browse Music by Genre</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_features" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/feature">
+                                                    Reports
+                                            </a>
+                </span>
+
+                
+                                </nav>
+        
+        <nav id="primary_menu_item_enter_search" class="">
+            <span class="">
+                Enter to Search
+            </span>
+        </nav>
+
+
+        
+                    <nav id="primary_menu_item_create" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a id="signup" href="/signup">+ Create Account</a>
+                </span>
+            </nav>
+            <nav id="primary_menu_item_login" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a id="login" href="/login">Login</a>
+                </span>
+            </nav>
+                
+    </nav>
+
+            <nav id="secondary_nav" class="clearfix hgrayblue inset_left2 inset_right2">
+            <div id="primary_social" class="social_round">
+                <span>follow on</span>
+                <a href="https://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            </div>
+
+                                                                                                                <nav id="secondary_nav_games" class="secondary_nav_list">
+                        <a href="/browse/games/release-date/new-releases/switch/date">New Releases</a>
+                        <a href="/browse/games/release-date/coming-soon/switch/date">Coming Soon</a>
+                        <a href="/browse/games/score/metascore/90day/switch/filtered">Best Games</a>
+                        <a href="/browse/games/publication/reviewed">Publications</a>
+                        <a href="/browse/games/company/reviewed">Publishers</a>
+                        <a href="/browse/games/trailers/switch/date">Trailers</a>
+                    </nav>
+                                    </nav>
+        <header id="primary_backdrop">
+    </header>
+</header>
+
+        </div>
+    </div>
+
+     <div id="gutters" class="site_gutters">     
+         <div id="gutters_mid" class="site_gutters">     
+             <div id="gutters_btm" class="site_gutters">     
+                 <div id="gutters_top" class="site_gutters">     
+                     <div id="container">
+
+
+
+    <div id="superleader" class="leader">
+                        
+                            <div id="leader_top_wrapper" class="ad_height_min">
+                        <div id="leader_plus_top" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_plus_top = googletag.defineSlot("/8264/aw-metacritic/games",[[728,90],[970,66],[970,250],[728,91],[321,31],[7,7]], "leader_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("leader_plus_top");
+                                                            </script>
+                                        </div>
+                            </div>
+                        
+
+
+</div>
+
+
+
+<div id="col_layout" class="col_layout">
+        <div id="main_content" class="content_section mpu_layout">
+                <div class="layout">
+            
+            <div id="gutters" class="site_gutters">
+
+            
+            
+            
+            
+                        <div id="main" class="col main_col">
+                <div>
+
+
+
+    
+
+
+
+<script type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "VideoGame",
+                "applicationCategory" : "Game",
+                "name" : "Owlboy",
+        "description" : "Owlboy is a vertical platform adventure set in the sky, where the islands of the world have been spread apart after a great calamity. You play as Otus, among the last of the Owls, a renowned race that has produced many of the world's great wonders",
+        "datePublished" : "February 13, 2018",
+        "url" : "https://www.metacritic.com/game/switch/owlboy",
+        "image" : "https://static.metacritic.com/images/products/games/0/82102b7e0667aba6f1a5a068f3898053-98.jpg"
+        
+        
+                            ,"aggregateRating" : {
+                "@type" : "AggregateRating",
+                "bestRating" : "100",
+                "worstRating" : "0",
+                "ratingValue" : "87"
+                                ,"ratingCount" : "27"
+                            }
+                                    ,"contentRating" : "ESRB E10+"
+                                    ,"gamePlatform" : "Switch"
+            ,"operatingSystem" : "Switch"
+                                                ,"publisher" : [
+                                                {
+                        "@type":"Organization",
+                        "name": "D-Pad Studio",
+                        "url": "https://www.metacritic.com/company/d-pad-studio"
+                    },                                    {
+                        "@type":"Organization",
+                        "name": "Soedesco",
+                        "url": "https://www.metacritic.com/company/soedesco"
+                    }                                                            ]
+                            ,"genre" : [
+                             "Action Adventure"
+                 ,                             "General"
+                                         ]
+            }
+</script>
+
+<div class="content_head product_content_head game_content_head">
+            
+                <div class="sharing " data-mc-refid="517470" data-mc-reftid="30" >
+    
+    <a class="sharing-facebook" title="Share on Facebook" rel="nofollow noopener popup:external" data-mc-social-url="https://www.metacritic.com/game/switch/owlboy?ftag=fbsoshares" href="javascript:void(0);"><span class="fa fa-fw fa-facebook"></span></a><a class="sharing-twitter" title="Share on Twitter" rel="nofollow noopener popup:external" data-mc-social-url="https://www.metacritic.com/game/switch/owlboy" data-mc-tweet-prefix="https://twitter.com/intent/tweet?via=metacritic&text=Owlboy%20for%20Switch%20Reviews" href="#" target="_blank"><span class="fa fa-fw fa-twitter"></span></a><a class="sharing-reddit" title="Share on Reddit" rel="nofollow noopener popup:external" data-mc-social-track-id="6" target="_blank" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.metacritic.com%2Fgame%2Fswitch%2Fowlboy%3Fftag%3Dredsoshares&title=Owlboy%20for%20Switch%20Reviews"><span class="fa fa-fw fa-reddit-alien"></span></a><a class="sharing-pinterest" title="Share on Pinterest" rel="nofollow noopener popup:external" data-mc-social-track-id="5" target="_blank" href="//pinterest.com/pin/create/link/?url=https%3A%2F%2Fwww.metacritic.com%2Fgame%2Fswitch%2Fowlboy%3Fftag%3Dpinsoshares&description=Owlboy%20for%20Switch%20Reviews&media=https://static.metacritic.com/images/products/games/0/82102b7e0667aba6f1a5a068f3898053.jpg"><span class="fa fa-fw fa-pinterest"></span></a></div>
+
+        <div class="product_title">
+                    <a href="/game/switch/owlboy" class="hover_none">
+                                <h1>Owlboy</h1>
+                            </a>
+                            <span class="platform">
+                		        <a href="/game/switch">
+                                                        Switch
+                                                    </a>
+                		    </span>
+		    </div>
+    <div class="product_data">
+        <ul class="summary_details">
+                            <li class="summary_detail publisher" >
+                    <span class="label">Publisher:</span>
+                    <span class="data">
+											<a href="/company/d-pad-studio"  >
+                                                        D-Pad Studio
+                                                    </a>
+					, 						<a href="/company/soedesco"  >
+                                                        Soedesco
+                                                    </a>
+					                    </span>
+                </li>
+                                        <li class="summary_detail release_data">
+                    <span class="label">Release Date:</span>
+                    <span class="data" >Feb 13, 2018</span>
+                </li>
+                                                                                    <li class="summary_detail product_platforms">
+                            <span class="label">Also On:</span>
+                            <span class="data">
+                                        <a href="/game/pc/owlboy" class="hover_none">PC</a>,                                                                            <a href="/game/playstation-4/owlboy" class="hover_none">PlayStation 4</a>,                                                                            <a href="/game/xbox-one/owlboy" class="hover_none">Xbox One</a>                                                </span>
+                        </li>
+                                                        </ul>
+    </div>
+</div>
+
+
+
+    <div class="content_nav">
+        <ul class="nav_items content_nav">
+                            <li class="nav nav_summary active_nav first_nav">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <span class="action">Summary</span>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_critic_reviews">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/switch/owlboy/critic-reviews">Critic Reviews</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_user_reviews">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/switch/owlboy/user-reviews">User Reviews</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_details">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/switch/owlboy/details">Details &amp; Credits</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_trailers last_nav">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <span class="disabled">Trailers &amp; Videos</span>
+                                                    </span>
+                    </span>
+                </li>
+                    </ul>
+    </div>
+
+
+
+
+
+
+
+
+    
+<div class="module product_data product_data_summary">
+    <div class="module_wrap has_image has_large_image">
+                    <div class="product_media large_media">
+                <div class="product_image large_image must_play">
+                                        <img class="product_image large_image" src="https://static.metacritic.com/images/products/games/0/82102b7e0667aba6f1a5a068f3898053-98.jpg" alt="Owlboy Image"/>
+                                    </div>
+                            </div>
+                <div class="summary_wrap">
+            
+            
+            <div class="section product_scores">
+                    <div class="details main_details">
+                            
+<div class="score_summary metascore_summary">
+    <div class="metascore_wrap highlight_metascore" >
+        <div class="label">Metascore</div>
+                    
+            
+
+        
+    <a class="metascore_anchor" href="/game/switch/owlboy/critic-reviews">
+<div class="metascore_w xlarge game positive"><meta content="100"><span>87</span></div>
+    </a>
+
+
+            
+                <div class="summary">
+            <p>
+                <span class="desc">
+                                            Generally favorable reviews
+                                    </span>
+						<span class="count">
+				<span class="separator"> - </span>
+                <span class="based">based on</span>
+									<a href="/game/switch/owlboy/critic-reviews">
+                                                    <span >
+                                27
+                            </span> Critics                                            </a>
+							</span>
+			                                <span class="help"><a href="/about-metascores">What's this?</a></span>            </p>
+        </div>
+    </div>
+</div>
+
+    </div>
+            <div class="details side_details">
+                                                                            
+    <div class="score_summary">
+    <div class="userscore_wrap feature_userscore">
+        <div class="label">User Score</div>
+                
+    <a class="metascore_anchor" href="/game/switch/owlboy/user-reviews">
+<div class="metascore_w user large game positive">7.5</div>
+    </a>
+
+
+        
+        <div class="summary">
+            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/switch/owlboy/user-reviews">130 Ratings</a></span></p>
+        </div>
+    </div>
+</div>
+                                                                
+                        
+                        <div class="score_summary yourscore_summary {'review_id': '0', 'request_url': '/jl/rate/set-rating?product_type=game&title=Owlboy&release_date=2018-02-13+00%3A00%3A00&ref_type_id=30&ref_id=517470'} "  >
+    <div class="yourscore_wrap">
+        <div class="label label_game">Your Score</div>
+        <div class="data yourscore">
+            <span class="score_value">0</span>
+            <span class="score_total">out of 10</span>
+        </div>
+        <div class="summary feedback has_feedback">
+                    <p class="rating_error"></p>
+                    </div>
+
+    
+        <div class="rating_picker rating_picker_game">
+                    <div class="rating_picker_std">
+                <div class="rating_label">Rate this:</div>
+                <ul class="rating_actions rating_values rating_values_game ">
+                <input type="hidden" name="csrf" value="dbbf19c6025fb55ac61b279cb3b08b7d" />
+                                    <li class="rating_value_item rating_value_100">
+                        <div class="rating_action rating_action_game rating_action_100 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=10&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 10 out of 10">
+                                <span class="rating_value">10</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_90">
+                        <div class="rating_action rating_action_game rating_action_90 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=9&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 9 out of 10">
+                                <span class="rating_value">9</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_80">
+                        <div class="rating_action rating_action_game rating_action_80 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=8&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 8 out of 10">
+                                <span class="rating_value">8</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_70">
+                        <div class="rating_action rating_action_game rating_action_70 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=7&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 7 out of 10">
+                                <span class="rating_value">7</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_60">
+                        <div class="rating_action rating_action_game rating_action_60 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=6&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 6 out of 10">
+                                <span class="rating_value">6</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_50">
+                        <div class="rating_action rating_action_game rating_action_50 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=5&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 5 out of 10">
+                                <span class="rating_value">5</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_40">
+                        <div class="rating_action rating_action_game rating_action_40 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=4&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 4 out of 10">
+                                <span class="rating_value">4</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_30">
+                        <div class="rating_action rating_action_game rating_action_30 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=3&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 3 out of 10">
+                                <span class="rating_value">3</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_20">
+                        <div class="rating_action rating_action_game rating_action_20 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=2&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 2 out of 10">
+                                <span class="rating_value">2</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_10">
+                        <div class="rating_action rating_action_game rating_action_10 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=1&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 1 out of 10">
+                                <span class="rating_value">1</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_0">
+                        <div class="rating_action rating_action_game rating_action_0 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=0&ref_type_id=30&ref_id=517470"
+                                                      title="Rate 0 out of 10">
+                                <span class="rating_value">0</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_delete">
+                        <div class="rating_action rating_action_game rating_action_delete "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=-1&ref_type_id=30&ref_id=517470"
+                                                      title="Delete rating">
+                                <span class="rating_value">0</span>
+                        </div>
+                    </li>
+                                </ul>
+            </div>
+
+        
+            <div class="rating_values rating_values_game scale disabled">
+                <div class="status"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+<div class="rating_signin_tmpl">
+    <div class="message">
+        Log in to finish rating <span class="product_name">Owlboy</span>
+    </div>
+
+    <div class="product_data">
+        <div class="product_media">
+            <div class="product_image large_image">
+                <img class="product_image large_image" src="https://static.metacritic.com/images/products/games/0/82102b7e0667aba6f1a5a068f3898053-98.jpg"
+                     alt="Owlboy Image" />
+            </div>
+        </div>
+        <div class="yourscore_login_wrapper">
+            <div class="product_name_wrapper">
+                <span class="product_name">Owlboy</span>
+            </div>
+            <div class="score_summary yourscore_login">
+                <div class="protector"></div>
+                <div class="yourscore_wrap">
+                    <div class="label label_game">Your Score</div>
+                    <div class="data yourscore">
+                        <span class="score_value">0</span>
+                        <span class="score_total">out of 10</span>
+                    </div>
+                    <div class="summary feedback">
+                    </div>
+
+                    
+                    <div class="rating_picker rating_picker_game">
+                        <input type="hidden" name="review_score" value="0"/>
+
+                        <div class="rating_picker_std">
+                            <div class="rating_label">Rate this:</div>
+                            <ul class="rating_actions rating_values rating_values_game ">
+                                <input type="hidden" name="csrf" value="dbbf19c6025fb55ac61b279cb3b08b7d" />
+                                                                    <li class="rating_value_item rating_value_100">
+                                        <div class="rating_action rating_action_game rating_action_100 "
+                                           rel="nofollow"
+                                           title="Rate 10 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=10&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">10</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_90">
+                                        <div class="rating_action rating_action_game rating_action_90 "
+                                           rel="nofollow"
+                                           title="Rate 9 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=9&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">9</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_80">
+                                        <div class="rating_action rating_action_game rating_action_80 "
+                                           rel="nofollow"
+                                           title="Rate 8 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=8&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">8</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_70">
+                                        <div class="rating_action rating_action_game rating_action_70 "
+                                           rel="nofollow"
+                                           title="Rate 7 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=7&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">7</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_60">
+                                        <div class="rating_action rating_action_game rating_action_60 "
+                                           rel="nofollow"
+                                           title="Rate 6 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=6&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">6</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_50">
+                                        <div class="rating_action rating_action_game rating_action_50 "
+                                           rel="nofollow"
+                                           title="Rate 5 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=5&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">5</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_40">
+                                        <div class="rating_action rating_action_game rating_action_40 "
+                                           rel="nofollow"
+                                           title="Rate 4 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=4&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">4</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_30">
+                                        <div class="rating_action rating_action_game rating_action_30 "
+                                           rel="nofollow"
+                                           title="Rate 3 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=3&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">3</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_20">
+                                        <div class="rating_action rating_action_game rating_action_20 "
+                                           rel="nofollow"
+                                           title="Rate 2 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=2&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">2</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_10">
+                                        <div class="rating_action rating_action_game rating_action_10 "
+                                           rel="nofollow"
+                                           title="Rate 1 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=1&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">1</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_0">
+                                        <div class="rating_action rating_action_game rating_action_0 "
+                                           rel="nofollow"
+                                           title="Rate 0 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=0&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">0</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_delete">
+                                        <div class="rating_action rating_action_game rating_action_delete "
+                                           rel="nofollow"
+                                           title="Delete rating"
+                                           data-rateref="/jl/rate/set-rating?score=-1&ref_type_id=30&ref_id=517470"
+                                           >
+                                            <span class="rating_value">                                                0</span>
+                                        </div>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="score_details userscore_details">
+                        <div class="score_summary">
+    <div class="userscore_wrap feature_userscore">
+        <div class="label">User Score</div>
+                
+<div class="metascore_w user large game positive">7.5</div>
+
+
+        
+        <div class="summary">
+            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>130 Ratings</strong></span></p>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    <div class="login_wrapper" data-fbenabled="1">
+    </div>
+    <div class="after_login">
+        <div class="after_message">Would you like to write a review?</div>
+        <div class="login_success">
+            <input class="BUTTON bigger" type="button" name="review" value="Write a Review" data-href="/game/switch/owlboy/user-reviews"/>
+            <input class="BUTTON bigger gray" type="button" name="close" value="Close"/>
+            <hr />
+                                                            
+                                                                                                <div>
+                    <div class="share_message">Share this?</div>
+                    
+
+<div class="inline_social product_social">
+    
+            <div class="inline_social_button">
+            <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-count="horizontal"
+                   data-via="metacritic"
+                   data-url="https://www.metacritic.com/game/switch/owlboy"
+                   data-counturl="https://www.metacritic.com/game/switch/owlboy">
+                <img src="/images/buttons/twitter_inline.png" alt="Share this on Twitter"/>
+            </a>
+        </div>
+                <div class="inline_social_button facebook_sharing">
+        <noscript>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.metacritic.com/game/switch/owlboy&t=Owlboy for Switch Reviews" rel="nofollow popup:external">
+                <img src="/images/buttons/facebook_inline.png" alt="Share this on Facebook" rel="nofollow" />
+            </a>
+        </noscript>
+        <fb:like href="https://www.metacritic.com/game/switch/owlboy" send="false" layout="button_count" width="100" show_faces="false" font=""></fb:like>
+        </div>
+    </div>
+
+                <div style="clear: both;"></div>
+                </div>
+                    </div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+                                                        </div>
+    
+            </div>
+                            <div class="section product_details">
+                    <div class="details main_details">
+    <ul class="summary_details">
+                    <li class="summary_detail product_summary">
+                <span class="label">Summary:</span>
+                <span class="data">
+                                                                        
+                                                                                                                                                        <span>Owlboy is a vertical platform adventure set in the sky, where the islands of the world have been spread apart after a great calamity. You play as Otus, among the last of the Owls, a renowned race that has produced many of the world's great wonders</span>
+                                    </span>
+            </li>
+            </ul>
+    
+    
+</div>
+<div class="details side_details">
+    <ul class="summary_details">
+                    <li class="summary_detail developer">
+                <span class="label">Developer:</span>
+                <span class="data">
+                    BlitWorks                </span>
+            </li>
+                                            <li class="summary_detail product_genre"><span class="label">Genre(s): </span><span class="data" >Action Adventure</span>,                                            <span class="data" >General</span>                                    </li>
+                                                    <li class="summary_detail product_players">
+            <span class="label"># of players:</span>
+            <span class="data">No Online Multiplayer</span>
+        </li>
+                <li class="summary_detail product_cheats">
+            <span class="label">Cheats:</span>
+            <span class="data"><a rel="popup:external" href="https://gamefaqs.gamespot.com/console/switch/code/210245.html">On GameFAQs</a></span>
+        </li>
+
+                    <li class="summary_detail product_rating">
+                <span class="label">Rating:</span>
+                <span class="data" >E10+</span>
+            </li>
+                        <li class="summary_detail more">
+            <a href="/game/switch/owlboy/details">More Details and Credits &raquo;</a>
+        </li>
+    </ul>
+</div>
+
+                </div>
+                    </div>
+    </div>
+</div>
+
+
+
+    
+    <div class="module critic_user_reviews">
+    <div class="critic_user_reviews_wrap">
+        
+        
+        <div class="module reviews_module critic_reviews_module">
+                    
+                                                    
+            <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/game/switch/owlboy/critic-reviews">Critic Reviews</a></h2></div></div>
+<div class="body">
+                                <div class="score_distribution">
+    <div class="distribution_wrap">
+        <div class="distribution_title">Score distribution:</div>
+        <ol class="score_counts hover_none">
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Positive:</span>
+                    <span class="data">
+                        <a href="/game/switch/owlboy/critic-reviews?dist=positive">                            <span class="total" style="width:100%;">
+                                <span class="count">25</span>
+                                <span class="distribution positive"> out of 27</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Mixed:</span>
+                    <span class="data">
+                        <a href="/game/switch/owlboy/critic-reviews?dist=neutral">                            <span class="total" style="width:8%;">
+                                <span class="count">2</span>
+                                <span class="distribution mixed"> out of 27</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Negative:</span>
+                    <span class="data">
+                                                    <span class="total zero_total" style="width:0%;">
+                                <span class="count">0</span>
+                                <span class="distribution negative"> out of 27</span>
+                            </span>
+                                            </span>
+                </div>
+            </li>
+                    </ol>
+		    </div>
+</div>
+
+                            <ol class="reviews critic_reviews">            <li class="review critic_review first_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.cgmagonline.com/reviews/owlboy-nintendo-switch-mini-review/">CGMagazine</a></div><div class="date">Feb 23, 2018</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv perfect">100</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Owlboy is a masterpiece. Plain and simple.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/cgmagazine?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.cgmagonline.com/reviews/owlboy-nintendo-switch-mini-review/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://atomix.vg/review-owlboy/">Atomix</a></div><div class="date">Feb 14, 2018</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">92</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                One of the greatest indie game of the last few years has arrived to consoles. A great Metroidvania with awesome art and pretty good game mechanics. A very intense story with all types of incredible moments. 
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/atomix?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://atomix.vg/review-owlboy/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.nintendolife.com/reviews/switch-eshop/owlboy">Nintendo Life</a></div><div class="date">Feb 11, 2018</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">90</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Owlboy is a three-pronged attack of success: the gameplay is tight, satisfying, and remains fresh throughout; the game’s world is visually stunning thanks to some truly masterful pixel art; and you’ll find yourself really caring about the cast of characters and the world surrounding them thanks to a compelling storyline and background lore. The game could be improved with the inclusion of map to aid exploration, but when that is the only real thing we can pick at as a negative point it is clear that we’re on to a winner.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/nintendo-life?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.nintendolife.com/reviews/switch-eshop/owlboy">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://switchplayer.net/2018/02/28/owlboy-review/">Switch Player</a></div><div class="date">Feb 28, 2018</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">90</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Ten years in the making and certainly worth the wait, Owlboy is a fantastic platform/adventure game that succeeds in making you care about the game's characters through a great tale of an underdog (or owl) wanting to prove himself to those who doubted him. Looking for a new indie game? You'd struggle to find one as well designed as this!
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/switch-player?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://switchplayer.net/2018/02/28/owlboy-review/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.nintendoworldreport.com/review/46413/owlboy-switch-review">NintendoWorldReport</a></div><div class="date">Feb 13, 2018</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">85</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                When that patch comes, Owlboy is absolutely worth checking out, even if just for the pretty artwork and enjoyable story. Fortunately on top of that, the gameplay is also sound, delivering a nice puzzle platforming experience with a wealth of variety and distinctive elements. That being said, the Switch version is rough around the edges right now. It’s still possible to play through and enjoy, but it might be worth holding out for the patch (or even the physical version in May).
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/nintendoworldreport?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.nintendoworldreport.com/review/46413/owlboy-switch-review">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://switch-brasil.com/analise-owlboy/">Switch Brasil</a></div><div class="date">Mar 19, 2018</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">85</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Owlboy is a game with quality artistic style and music that leaves the ideal mood for fun. In addition to good controls with a quick response, the game makes sure to vary the gameplay.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/switch-brasil?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://switch-brasil.com/analise-owlboy/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review last_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://apptrigger.com/2018/02/12/owlboy-review-bird-broken-wing/">App Trigger</a></div><div class="date">Feb 12, 2018</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game mixed indiv">65</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Owlboy has a lot of charm but suffers from a convoluted control scheme and some serious game-crashing bugs. The best way to play it is still on the PC, even though the Nintendo Switch seemed like it would be the most ideal place to play it.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/app-trigger?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://apptrigger.com/2018/02/12/owlboy-review-bird-broken-wing/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                        </ol>
+                        </div>
+
+    
+    
+                        <p class="see_all"><a href="/game/switch/owlboy/critic-reviews">See all 27 Critic Reviews</a></p>
+                    
+    </div>
+            <div class="module reviews_module user_reviews_module">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/game/switch/owlboy/user-reviews">User Reviews</a></h2></div></div>
+            <div class="write_review"><a class="write_review" href="/game/switch/owlboy/user-reviews"><span>Write a Review</span></a></div>
+        <div class="body">
+                                            <div class="score_distribution">
+    <div class="distribution_wrap">
+        <div class="distribution_title">Score distribution:</div>
+        <ol class="score_counts hover_none">
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Positive:</span>
+                    <span class="data">
+                        <a href="/game/switch/owlboy/user-reviews?dist=positive">                            <span class="total" style="width:100%;">
+                                <span class="count">16</span>
+                                <span class="distribution positive"> out of 37</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Mixed:</span>
+                    <span class="data">
+                        <a href="/game/switch/owlboy/user-reviews?dist=neutral">                            <span class="total" style="width:88%;">
+                                <span class="count">14</span>
+                                <span class="distribution mixed"> out of 37</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Negative:</span>
+                    <span class="data">
+                        <a href="/game/switch/owlboy/user-reviews?dist=negative">                            <span class="total" style="width:44%;">
+                                <span class="count">7</span>
+                                <span class="distribution negative"> out of 37</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                    </ol>
+		    </div>
+</div>
+
+                                                <ol class="reviews user_reviews">
+                                                            <li id="user_review_8565796" class="review user_review first_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/ToastyBoii">ToastyBoii</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Aug 18, 2018</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv perfect">10</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8565796"><span class="blurb blurb_collapsed">Owlboy is a straight up masterpiece with amazing art, world building, lore, great music, unique but simple controls and general veriety in</span><span class="blurb blurb_expanded">Owlboy is a straight up masterpiece with amazing art, world building, lore, great music, unique but simple controls and general veriety in gameplay.<br/>The story is not what is seems and in a good way, it surprises you with a hard hit to the gut, but lifts you up a bit later. the tone is always right and the game is just straight up my second favorite game of all times.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">0</span>
+				of 
+				<span class="total_thumbs">0</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_8788869" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/Deckard2">Deckard2</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Nov 12, 2018</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv">9</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8788869"><span class="blurb blurb_collapsed">You would be forgiven for assuming this is just another in the long list of metroid-vania's to hit the Nintendo Switch. However, once the</span><span class="blurb blurb_expanded">You would be forgiven for assuming this is just another in the long list of metroid-vania's to hit the Nintendo Switch. However, once the initial first steps are taken into young Otus' journey to save his home land of Advent your heart will be warmed as you start to care about the tale that unfolds before you.<br/><br/>A story of an underdog overcoming adversity, it is once a gain a testament to the game and its writing as to how much you begin to care about your pixelated heroes. The music is soaring, the gameplay satisfying and by the time the credits rolled I was well and truly invested in my merry band of adventurers.<br/><br/>Don't let the fact that this is another in a long line of 2D side-scrolling metoridvania's put you off. This is an adventure worth taking and a rare gem that should be experienced if you have a Switch.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">0</span>
+				of 
+				<span class="total_thumbs">0</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                    
+                        
+                        <li id="native_top" class="ad_unit review">
+                                    </li>
+                        
+
+
+                                                                                    <li id="user_review_8221355" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/nusco">nusco</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Mar 26, 2018</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv">9</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8221355"><span class="blurb blurb_collapsed">People come to Owlboy because of the graphics. It's been often described as the best pixel art ever, and it's certainly amongst the best. The</span><span class="blurb blurb_expanded">People come to Owlboy because of the graphics. It's been often described as the best pixel art ever, and it's certainly amongst the best. The gorgeous music doesn't come far behind. This is one of the very few games whose soundtrack entered my Spotify albums list.<br/><br/>The gameplay is hit-and-miss–a liberal blend of platforming and shooting. In classic metroidvania style, you unlock areas in the extensive map as you gain new abilities. The difficulty level is uneven, and Owlboy is probably going to frustrate you at times. Interestingly, however, each player seems to be frustrated by a different part of the game. Some people complain about the stealth sections, or the “bullet sponge” bosses. I was fine with both, but got intensely frustrated by a sequence that most players seem to just breeze through. (Those damn monkeys!)<br/><br/>All of that, however, doesn't really explain why Owlboy became an instant cult classic. That's all down to the story. So many games try very hard to come up with a meaningful story, and fall flat. Owlboy puts them all to shame by delivering a story and characters you deeply care about–and doing it all so well, it makes it look easy. This game constantly surprises you with its depth and originality. When it courts gaming cliches, it's only to subvert them later on.<br/><br/>It's quite surprising how much emotional buy-in this game can elicit from you. People talk a lot about the brilliant first few minutes, the shocking ending, or that mid-game tearjerker. To me, the most unforgettable moment came very unexpected. It was an optional sequence that other players might well have missed, where I was made privy to the fate of a minor character. (Non-spoilery hint: that talk about the wife). That dialogue, the vast loneliness of the environment, and the music–oh, my, that music.<br/><br/>Many games (and movies) aspire to give you moments to remember. That's a though call. That moment in Owlboy, however, I won't forget.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">2</span>
+				of 
+				<span class="total_thumbs">4</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_8375675" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/artificeprime">artificeprime</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">May 22, 2018</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game mixed indiv">7</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8375675"><span class="blurb blurb_collapsed">Owlboy is a work of art that is definitely worth experiencing but it does have some weak points. Crashes were frequent.  I am generally not a</span><span class="blurb blurb_expanded">Owlboy is a work of art that is definitely worth experiencing but it does have some weak points. Crashes were frequent.  I am generally not a fan of pixel art but the beauty of it in this game is hard to deny. The art direction is excellent and the quality is consistent throughout. A few sequences in particular have a cinematic quality that I have never seen in a pixel art game before. The sound track is also a highlight and the way it evolved with the story always seemed appropriate and never got repetitive. Gameplay is fun for the most part and there is a good amount of variety but there are some areas that I found to be a chore to get through. The pacing of the game was also a bit weird, key moments felt rushed without much explanation as though chunks of the story had been removed. The story is good but quite simple, for an action platformer it is well above average and certainly better than any Mario story I can recall but I felt that it missed the opportunity to be a great story because it never really dug deep with any of the concepts it introduced. Overall though I liked the story for what it was and it was interesting and had some unique ideas.<br/><br/>Gameplay 7 - The thing that made gameplay unique is the way you use different team-mates for your special abilities. Rather than upgrading your own attacks you find new friends to carry around and they each have a special skill. The idea is pretty cool and adds a sense of importance to the companions you rely on throughout the story. There are some sections where you lose a companion and you miss them because your abilities are more limited. The control scheme though could be a bit confusing I constantly found myself accidentally dropping my team-mates and then I would have to cycle through them to get the one I wanted. Also aiming with the right stick while moving with the left with the charged ability could be troublesome. Not a big deal but a bit frustrating during fast paced battles or parts where timing was crucial. Another thing about gameplay that was a bit of a pain was the way the camera moved between sections. Sometimes the camera would follow Otus which was fine but when you got to the edge of a new area it would stop before shifting over, almost like swapping between two different images. The transition felt jarring and happened very frequently. Collecting coins in the game was a bit underwhelming. You can spend the coins but almost the only thing you get is a slight health upgrade. It just didn't feel rewarding.<br/><br/>Story/Progression 7 - The story is quite unique but still follows the typical structure of collecting special objects hidden at the end of dungeons. There are a few things that it does different from most games though. There are some major twists, whenever Otus and his friends go to a new place something unexpected usually happens. Without giving spoilers those moments ranged from tragic to awe inspiring. I found the lore to be a bit underdeveloped but the ideas were good enough to keep me engaged. The final was very satisfying.<br/><br/>World 7 - Each location has its own identity and all of the dungeons have a unique style and atmosphere. The biggest weakness of the world is the layout. It is a convoluted web of passageways. There is no fast travel system so every time you want to back track you need to go back through a long winding tunnel of obstacles. It didn't bother me at first but by the end of the game I found getting from place to place to be a chore. The dungeons themselves are pretty well designed but it would have been really helpful if you could teleport from one area to another after clearing each one. Teleportation already plays a role in the game so I don't know why that wasn't included as a way of getting from place to place.<br/><br/>Characters 6 - I did like the characters but very few of them evolved beyond their very basic personality. There are only a few characters who we really get to learn much about beyond their basic description. There were a couple characters who were more than they seemed and those reveals were satisfying but some of the primary characters seemed quite one note.<br/><br/>Visual Design 8 - This is easily one of the best looking pixel art games I have ever played. The environments are all beautiful and detailed and the sky always seems to look vibrant. The background sculptures actually look three dimensional and have a high level of detail and structure. There are a few scenes that show historic events in the story that are true works of art with a very high level of detail and form.<br/><br/>Sound Design 8 - The sound track is great. The songs themselves are very good but also the way they are used in the story. Each area has its own theme but the music also changes as the story progresses. I always felt that the music matched the atmosphere and that is pretty rare even in AAA games. The sound effects were also pretty good although they didn't stand out as specia</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">2</span>
+				of 
+				<span class="total_thumbs">3</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_8521788" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/utybo">utybo</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Jul 27, 2018</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game mixed indiv">6</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8521788"><span class="blurb blurb_collapsed">Owlboy looks fantastic. The music is amazing and the characters are really charming. However, there are quite a few problems with this game :</span><span class="blurb blurb_expanded">Owlboy looks fantastic. The music is amazing and the characters are really charming. However, there are quite a few problems with this game :<br/><br/>- It's way too short. Finishing it took me less than 10 hours, with very little incentive to go back and play again.<br/>- Playing in handheld mode or with the joycons by themselves is really hard and uncomfortable due to the constant jumping between the R stick and the A/B/Y/X buttons. Use a Pro controller or the joycons grip.<br/>- Some bosses are hard to understand. When I see a boss, I should be able to understand its patterns pretty easily. In Owlboy some bosses feel like messes<br/>- The difficulty is really weird, going from hard bosses to ones that are quite easy.<br/>- The game is *very* linear. Additional collectibles are almost only secret rooms or rewards for clearing areas, not actually finding new parts of the map.<br/>- There's literally nothing after the credits. No new game +, nothing like that. The game tells you the results of your actions but you don't get to experience them, which makes the ending very frustrating. Trying to re-launch your save after you've finished the game just sends you back to right the moment right before the final boss.<br/><br/>In the end I just want more content... The game is definitely too short and linear, where there could have been tons of expansions made.<br/><br/>Is Owlboy overrated? Definitely. But it still has amazing visuals and an overall good story-line. It's just a shame that the game is so... weak, content wise.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">2</span>
+				of 
+				<span class="total_thumbs">4</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_8522169" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/Sunshadow87">Sunshadow87</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Jul 27, 2018</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game mixed indiv">6</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8522169"><span class="blurb blurb_collapsed">Con los años los metroidvanias se han convertido quizas en mi segundo genero favorito tras los RPGSs. Por eso me sorprendo a mi mismo dandole</span><span class="blurb blurb_expanded">Con los años los metroidvanias se han convertido quizas en mi segundo genero favorito tras los RPGSs. Por eso me sorprendo a mi mismo dandole una nota tan normalita a un metroidvania que ha tenido tan buena recepcion por la critica como owlboy. De hecho, si tengo que pensar en algo memorable de este juego, es el cuidado apartado grafico pixel art...<br/>La historia de owlboy cumple su funcion, recordando a la de algunos estudios de animacion como gimli. Sin embargo, a diferencia de estos, en owlboy solo encontraremos momentos puntuales en los que son capaces de tocar nuestra fibra sensible.<br/>Otra cosa positiva en principio es el gameplay innovativo, que introduce la mecanica de vuelo. No obstante, aunque aplaudo su valentia, innovar no es siempre sinonimo de mejorar. Al principio la mecanica entretiene, pero conforme avanza el juego se acaba haciendo tediosa, y los controles acaban siendo enrevesados. Tambien encontramos menos habilidades de exploracion y backtracking que otros metroidvanias, haciendose un juego mucho mas linial: ve a la mazmorra 1, observa la historia, ve a la mazmorra 2, observa la historia, etc... quizas el punto que lo hace salir peor parado.<br/>En general un buen juego, pero lejos de ser de los mejores de su genero</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">0</span>
+				of 
+				<span class="total_thumbs">1</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_9418330" class="review user_review last_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/MegamanAT">MegamanAT</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Apr  1, 2019</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game negative indiv">0</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span>most overrated game ever. lousy controlls, bad story, bad leveldesign. no worth 20 bucks. more a 5 $ game.</span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">0</span>
+				of 
+				<span class="total_thumbs">1</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                            </ol>
+                                    <p class="see_all"><a href="/game/switch/owlboy/user-reviews">See all 37 User Reviews</a></p>
+                                                                </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+<script type='text/javascript'>
+  
+  //override amzn vars
+  var pageGuid = window.utag_data ? window.utag_data._pageViewGuid : "";
+  window.amzn_assoc_subtag = pageGuid;
+  window.amzn_assoc_title = "Shop Related Deals";
+  window.amzn_assoc_rows = "1";
+  window.amzn_assoc_rating = "false";
+  window.amzn_assoc_design = "standard_grid";
+  
+</script>
+
+<link rel="stylesheet" href="/css/global/amazon.src.css" type="text/css"/>
+
+<div id="tv-game-music-amazon-shopping-unit">
+  <div id="amzn-assoc-ad-59f8e9e4-5bed-4576-aacb-15693482f182" class="subrow pad_top2"></div>
+
+  <script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=59f8e9e4-5bed-4576-aacb-15693482f182"></script>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+                                                                </div>
+                            <div id="side" class="col side_col">
+                    
+                        
+                        <div id="mpu_plus_top" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_plus_top = googletag.defineSlot("/8264/aw-metacritic/games",[[300,250],[300,600]], "mpu_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("mpu_plus_top");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+                                                <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_native_top = googletag.defineSlot("/8264/aw-metacritic/games",[[11,11], 'fluid'], "native_top").addService(googletag.pubads()).setTargeting("pos", "top").setTargeting('strnativekey', '05786b87');
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("native_top");
+                                                            </script>
+                                
+
+
+
+
+<div class="module list_rankings contain_module">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Awards & Rankings</h2></div></div>
+    <div class="body">
+        <table class="rankings">
+                            
+                                    
+                                                                                                    
+                
+                                                                        
+                
+                                    
+                                            
+                                                    
+                <tr>
+                    <td class="ranking_icon">
+                                                    <a href="/browse/games/score/metascore/year/switch/filtered?sort=desc&year_selected=2018">
+                                                <i class="fa fa-trophy"></i>
+                        <div class="shield">19</div>
+                                                    </a>
+                                            </td>
+                    <td class="ranking_wrap">
+                        <div class="ranking_title">
+                            
+                                                                                        <a href="/browse/games/score/metascore/year/switch/filtered?sort=desc&year_selected=2018">#19 Best Switch Game of 2018</a>
+                                                        
+                            
+                                                    </div>
+                    </td>
+                </tr>
+                         
+                                    
+                                                                                                    
+                
+                                                                        
+                
+                                    
+                                            
+                                                    
+                <tr>
+                    <td class="ranking_icon">
+                                                    <a href="/browse/games/score/metascore/discussed/switch/filtered?sort=desc&year_selected=2018">
+                                                <i class="fa fa-trophy"></i>
+                        <div class="shield">27</div>
+                                                    </a>
+                                            </td>
+                    <td class="ranking_wrap">
+                        <div class="ranking_title">
+                            
+                                                                                        <a href="/browse/games/score/metascore/discussed/switch/filtered?sort=desc&year_selected=2018">#27 Most Discussed Switch Game of 2018</a>
+                                                        
+                            
+                                                    </div>
+                    </td>
+                </tr>
+                         
+                                    
+                                                                                                    
+                
+                                                                        
+                
+                                    
+                                            
+                                                    
+                <tr>
+                    <td class="ranking_icon">
+                                                    <a href="/browse/games/score/metascore/shared/switch/filtered?sort=desc&year_selected=2018">
+                                                <i class="fa fa-trophy"></i>
+                        <div class="shield">62</div>
+                                                    </a>
+                                            </td>
+                    <td class="ranking_wrap">
+                        <div class="ranking_title">
+                            
+                                                                                        <a href="/browse/games/score/metascore/shared/switch/filtered?sort=desc&year_selected=2018">#62 Most Shared Switch Game of 2018</a>
+                                                        
+                            
+                                                    </div>
+                    </td>
+                </tr>
+                 </table>
+    </div>
+</div>
+
+
+    <div class="module supplements_module" id="supplementary-nav">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Essential Links</h2></div></div>
+    <div class="body">
+        <div class="body_wrap">
+                        <div id="supplementary-items" class="supplements supplement_links">
+                <ol class="supplements supplement_links">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;1'}" href="https://www.metacritic.com/browse/games/release-date/new-releases/switch/date">New Switch Releases by Date</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;2'}" href="https://www.metacritic.com/browse/games/release-date/new-releases/switch/name">New Switch Releases by Title</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;3'}" href="https://www.metacritic.com/browse/games/release-date/coming-soon/switch/date">Upcoming Switch Release Calendar</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;4'}" href="https://www.metacritic.com/browse/games/score/metascore/all/switch/filtered?sort=desc">All-Time High Scores - Switch</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;5'}" href="https://www.metacritic.com/browse/games/score/metascore/year/switch/filtered?sort=desc&year_selected=2019">2019 High Scores - Switch</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;6'}" href="https://www.metacritic.com/feature/nintendo-switch-console-hardware-review">Hardware Reviews: Nintendo Switch</a>
+                            </li>
+                                                                                                                                                    </ol>
+            </div>
+                                    <div id="supplementary-articles" class="supplements supplement_articles">
+                <ol class="supplements supplement_articles">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;1'}" href="/pictures/worst-videogames-of-2019">Worst Games of 2019</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;2'}" href="http://www.metacritic.com/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Release Dates for All Notable Upcoming Games</a>
+                            </li>
+                                                                                                        </ol>
+                <div class="more_supplements more_articles">
+                    
+                    <a class="dw_tag {'tag':'supplementary-nav;more-articles'}" href="/feature">More articles &raquo;</a>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+
+
+
+                        
+                        <div id="recirculation_ad" class="ad_unit pad_btm1 pad_top1">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_recirculation_ad = googletag.defineSlot("/8264/aw-metacritic/games",[300,249], "recirculation_ad").addService(googletag.pubads()).setTargeting("pos", "recirculation");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("recirculation_ad");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+
+
+
+    
+    
+    
+        <div class="module products_module list_product_titles_widget_module  contain_module">
+        <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/browse/games/release-date/new-releases/switch/date">Current Switch Games</a></h2><div class="more"><span class="more_item"><a href="/browse/games/release-date/new-releases/switch/date">Full List &raquo;</a></span></div></div></div>
+                  
+        <div class="body">
+                                                                                <div class="tabs ">
+        <div class="tab_wrap">
+                            <ul class="tabs tabs_type_1">            <li class="tab tab_type_1 tab_metascore first">
+                                    <span class="active"><span>By Metascore</span></span>
+                            </li>
+                                                        <li class="tab tab_type_1 tab_userscore last">
+                                                        <a  href="/game/switch/owlboy?recent-sort=userscore"><span>By user score</span></a>
+                            </li>
+            </ul>            
+    
+    
+            </div>
+    </div>
+    
+    
+
+                        <div class="body_wrap">
+                
+                <div class="product_titles">
+    <table class="score_title_table">
+                                                
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/divinity-original-sin-ii---definitive-edition">
+<span class="metascore_w small game positive">93</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/divinity-original-sin-ii---definitive-edition">
+                    Divinity: Original Sin II - Definitive Edition
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/dragon-quest-xi-s-echoes-of-an-elusive-age---definitive-edition">
+<span class="metascore_w small game positive">91</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/dragon-quest-xi-s-echoes-of-an-elusive-age---definitive-edition">
+                    Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/fire-emblem-three-houses">
+<span class="metascore_w small game positive">89</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/fire-emblem-three-houses">
+                    Fire Emblem: Three Houses
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/ori-and-the-blind-forest-definitive-edition">
+<span class="metascore_w small game positive">89</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/ori-and-the-blind-forest-definitive-edition">
+                    Ori and the Blind Forest: Definitive Edition
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/super-mario-maker-2">
+<span class="metascore_w small game positive">88</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/super-mario-maker-2">
+                    Super Mario Maker 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/far-lone-sails">
+<span class="metascore_w small game positive">88</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/far-lone-sails">
+                    FAR: Lone Sails
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/what-remains-of-edith-finch">
+<span class="metascore_w small game positive">88</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/what-remains-of-edith-finch">
+                    What Remains of Edith Finch
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/killer-queen-black">
+<span class="metascore_w small game positive">83</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/killer-queen-black">
+                    Killer Queen Black
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/terraria">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/terraria">
+                    Terraria
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/shovel-knight-king-of-cards">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/shovel-knight-king-of-cards">
+                    Shovel Knight: King of Cards
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/pokemon-shield">
+<span class="metascore_w small game positive">80</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/pokemon-shield">
+                    Pokemon Shield
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/cat-quest-ii">
+<span class="metascore_w small game positive">77</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/cat-quest-ii">
+                    Cat Quest II
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/candleman">
+<span class="metascore_w small game positive">75</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/candleman">
+                    Candleman
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/fantasy-strike">
+<span class="metascore_w small game positive">75</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/fantasy-strike">
+                    Fantasy Strike
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/vasara-collection">
+<span class="metascore_w small game mixed">74</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/vasara-collection">
+                    Vasara Collection
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/rise-race-the-future">
+<span class="metascore_w small game mixed">73</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/rise-race-the-future">
+                    Rise: Race The Future
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/daemon-x-machina">
+<span class="metascore_w small game mixed">68</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/daemon-x-machina">
+                    Daemon X Machina
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/etherborn">
+<span class="metascore_w small game mixed">62</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/etherborn">
+                    Etherborn
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/the-forbidden-arts">
+<span class="metascore_w small game mixed">50</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/the-forbidden-arts">
+                    The Forbidden Arts
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/switch/narcos-rise-of-the-cartels">
+<span class="metascore_w small game negative">41</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/switch/narcos-rise-of-the-cartels">
+                    Narcos: Rise of the Cartels
+                    </a>
+        
+            </td>
+</tr>
+
+            </table>
+
+
+    </div>
+
+
+            </div>
+        </div>
+
+        		            <div class="foot">
+        <div class="foot_wrap">
+                    
+            <div class="more">
+                <span class="more_item"><a href="/browse/games/release-date/new-releases/switch/date">All Current Games &raquo;</a></span>
+            </div>
+                </div>
+    </div>
+
+
+    </div>
+
+
+
+
+                        
+                        <div id="mpu_bottom" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_bottom = googletag.defineSlot("/8264/aw-metacritic/games",[300,250], "mpu_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("mpu_bottom");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                    </div>
+    </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+                        
+                        <div id="leader_bottom" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_bottom = googletag.defineSlot("/8264/aw-metacritic/games",[[728,90],[970,66],[728,92],[970,250],[7,7]], "leader_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("leader_bottom");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+            </div>
+
+                        
+                        
+                        <div id="intromercial" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_intromercial = googletag.defineOutOfPageSlot("/8264/aw-metacritic/games",
+                                    "intromercial").addService(googletag.pubads());
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("intromercial");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+            
+    
+    <div id="mastfoot">
+            <footer id="bottom_footer">
+    <div id="providers">
+	<a href="https://www.allmusic.com" target="_blank">Music title data, credits, and images provided by <span>AMG</span></a>
+	<span class="link_divider">|</span><a href="https://www.imdb.com" target="_blank">Movie title data, credits, and poster art provided by <span>IMDb</span></a>
+	<span class="link_divider">|</span><a href="https://www.internetvideoarchive.com" target="_blank">Video and Images provided by <span>IVA</span></a>
+    <div id="trademark">
+        We Deal With Criticism<sup>&reg;</sup>&nbsp;
+	</div>
+</div>
+
+
+            <div class="site_links upper">
+                    <a href="https://www.metacritic.com/movie">
+                <span>
+                                            Movies
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/tv">
+                <span>
+                                            TV
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/music">
+                <span>
+                                            Music
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/playstation-4">
+                <span>
+                                            PS4
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/xbox-one">
+                <span>
+                                            XboxOne
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/switch">
+                <span>
+                                            Switch
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/pc">
+                <span>
+                                            PC
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/wii-u">
+                <span>
+                                            WiiU
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/3ds">
+                <span>
+                                            3DS
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/playstation-vita">
+                <span>
+                                            PS Vita
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/ios">
+                <span>
+                                            iOS
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/feature">
+                <span>
+                                            Reports
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/rss">
+                <span>
+                                            RSS Feeds
+                                    </span>
+            </a>
+                </div>
+    
+    <div class="pad_top1 pad_btm1">
+        <div class="social_round">
+            <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="about_cbs">
+        <div class="footer_about_links">
+            <a class="first" href="https://www.cbsinteractive.com" target="_blank">About CBS Interactive</a>
+            <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/careers/" target="_blank">Jobs</a>
+            <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/advertise/" target="_blank">Advertise</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/faq">FAQ</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/about-metacritic">About Metacritic</a>
+            <span class="link_divider">|</span><a href="https://cbsi.secure.force.com/CBSi/knowledgehome?referer=metacritic.com">Help & Support</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/contact-us">Contact</a>
+        </div>
+        <div class="footer_about_links">
+            <span><a href="https://ca.privacy.cbs" target="_blank">California Privacy/Info We Collect</a></span>
+            <span class="link_divider">|</span><span><a href="https://ca.privacy.cbs/donotsell" target="_blank">California Do Not Sell My Info</a></span>
+            <span class="link_divider">|</span><span id="footer_privacy"><a href="https://legalterms.cbsinteractive.com/privacy" target="_blank">Privacy Policy</a></span>
+            <span class="link_divider">|</span><span id="footer_terms"><a href="https://cbsi.secure.force.com/CBSi/articles/FAQ/CBSi-Terms-of-Use?template=template_tougl&referer=tougl.com&data=&cfs=default" target="_blank">Terms of Use</a></span>
+                            <span class="link_divider">|</span><span id="footer_attribution"><a href="https://www.gamespot.com/" target="_blank">Gamespot</a></span>
+                    </div>
+        <div id="footer_rights" class="pad_btm2">
+            &copy; 2019 CBS Interactive Inc. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    
+    <div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
+    <script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+
+</div>
+
+<div id="site_scripts" class="dw_tracking">
+     
+<script type="text/javascript" src="/js/omniture/uuid.js"></script>
+<script type="text/javascript">
+    
+    if (self != top) {
+        top.location = self.location;
+    }
+    var MC_UUID = uuid.v1();
+</script>
+
+                                                                                                                                                                                        
+    
+
+ 
+<script language="JavaScript" type="text/javascript">
+    
+    var utag_data = {
+        isDev:0,
+            
+                siteType:"desktop web",
+                deviceType:"desktop",
+                siteSection:"games",
+                pageType:"product_overview",
+                pageFindingMethod:"External",
+                session: MetaC.adSession() + ':' + MetaC.adSubses(),
+                gameGenre:"Action Adventure|General",userId:"",userState:"not authenticated",userType:"registered",gameId:"mc-game-517470",gameTitle:"Owlboy",gamePlatform:"Switch",bkPath:"/8264/aw-metacritic/games",_test:"",pageViewGuid:MC_UUID
+    };
+    
+                        
+            
+            window.om_lead_media = {
+                mediaType: "Game",
+                mediaId: "mc-game-517470",
+                mediaTitle: "Owlboy"
+            };
+            
+            
+    
+    
+    if ( window.eventAmazonBuyView ) {
+        utag_data.eventAmazonBuyView = 1;
+    }
+    if ( window.eventAmazonPivView ) {
+        utag_data.eventAmazonPivView = 1;
+    }
+    
+    
+    
+    
+
+    
+</script>
+
+
+
+<script type="text/javascript">
+    
+    
+    var __pv = MetaC.handleGooglePageView();
+    googletag.cmd.push(function() {
+        
+        if (MC_USER_LOGGED_IN){
+            googletag.pubads().setTargeting("user", "registered");
+        }else{
+            googletag.pubads().setTargeting("user", "anon");
+        }
+        googletag.pubads().setTargeting("ptype", "product_overview");
+                    googletag.pubads().setTargeting("gameId", "game-517470");
+                    googletag.pubads().setTargeting("game", "owlboy");
+                    googletag.pubads().setTargeting("con", "switch");
+                    googletag.pubads().setTargeting("genre", "action-adventure, ");
+                    googletag.pubads().setTargeting("score", "87");
+                            googletag.pubads().setTargeting("test", "mcold");
+                
+        googletag.pubads().setTargeting("vguid", MC_UUID);
+        googletag.pubads().setTargeting("session", MetaC.adSession());
+        googletag.pubads().setTargeting("subses", MetaC.adSubses());
+        googletag.pubads().setTargeting("env", "prod");
+                        var parts = window.location.hash.split("=");
+        if ( parts.length > 1 && parts[0] == '#ftag' ) {
+            googletag.pubads().setTargeting("ftag",parts[1]);
+        }
+        
+                
+        
+        if ( window.I11C) {
+            if (window.I11C.Morph && window.I11C.Morph === 1) {
+                utag_data.adBlockRecovery = "unblocked";
+                utag_data.adsAreBlocked = "true";
+
+                var geo = MetaC.Cookie.get('il_geo');
+                if ( geo ) {
+                    geo = MetaC.Cookie.ilParse(geo);
+                    if ( geo && geo.postal_code && geo.country_code ) {
+                        googletag.pubads().setLocation(geo.postal_code + ',' + geo.country_code)
+                    }
+                }
+            } else {
+                utag_data.adBlockRecovery = 'instart_noop';
+                utag_data.adsAreBlocked = "not_blocked";
+            }
+        } else {
+            utag_data.adBlockRecovery = 'no_instart';
+            utag_data.adsAreBlocked = "not_blocked";
+        }
+
+        googletag.pubads().setTargeting("pv", __pv+""); // must be a string
+
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+    });
+    //
+    // get ad preferences and load ads
+    // npa is already set if gtag was present
+    //
+    window.cbsoptanon.onAdsReady(function(_cbsoptanon, adOpts) {
+        googletag.cmd.push(function() {
+            googletag.enableServices();
+            if (!(window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)) {
+                googletag.pubads().refresh();
+            }
+        });
+    });
+    
+    
+
+    
+    
+    if ( MetaC && MetaC.Video ) {
+        
+                    MetaC.Video.setIMATargeting("gameId", "game-517470");
+                    MetaC.Video.setIMATargeting("game", "owlboy");
+                    MetaC.Video.setIMATargeting("con", "switch");
+                    MetaC.Video.setIMATargeting("genre", "action-adventure, ");
+                    MetaC.Video.setIMATargeting("score", "87");
+                    
+    }
+    
+</script>
+
+
+
+
+
+    <script type="text/javascript" src="https://urs.metacritic.com/sdk/urs.js"></script>
+
+
+    <script type="text/javascript">
+        if ( window.MetaC && MetaC.URS ) {
+            MetaC.URS.config(227, false);
+        }
+    </script>
+
+
+
+
+    
+<script type="text/javascript">
+    window.cbsoptanon.onScriptsReady(function(cmp) {
+        //
+        // fire off tealium if the banner is not present after
+        // onetrust has loaded. (cbsoptanon has a promise polyfill)
+        //
+        cmp.ot.awaitInitialConsent(function() {
+            (function(a,b,c,d){
+            a='//tags.tiqcdn.com/utag/cbsi/metacriticsite/prod/utag.js';
+            b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+            a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+            })();
+        });
+    });
+</script>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function(){
+                MetaC.checkOmniEvents();
+            }, 300);
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+    
+    dwVars = {"siteId":"50","onId":"35320","ptId":"6346","ctype":"entitytype;entityid","cval":"game;517470"};
+    if (typeof DW == "object"){
+        DW.pageParams = dwVars;
+        DW.regSilo = '12';
+        DW.clear();
+    }
+</script>
+
+
+
+<script>
+    var cbsiApexGlobal = {
+        'SITE': dwVars.siteId,
+        'NODE': dwVars.onId,
+        'PTYPE':dwVars.ptId
+    };
+</script>
+
+
+
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22577913-5']);
+    _gaq.push(['_setCustomVar',1,'PageType',dwVars.ptId,3]);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['nT._setAccount', 'UA-27653683-1']);
+    _gaq.push(['nT._setAllowLinker', true]);
+    _gaq.push(['nT._setSampleRate', '1']);
+    _gaq.push(['nT._trackPageview']);
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>
+    gdprConsentCallback('facebook', function () {
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '123113677890173',
+                version    : 'v2.6',
+                channelUrl : 'https://www.metacritic.com/static/fbchannel.html',
+                status     : true,
+                xfbml      : true,
+                cookie     : true
+                });
+            MetaC.FB.initialized();
+            };
+        
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, {}, 'social');
+    
+</script>
+
+
+
+<script>
+    gdprConsentCallback('twitter', function () {
+        window.twttr = (function (d,s,id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+        js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));
+
+        twttr.ready(function (twttr) {
+            MetaC.Twitter.initialized();
+        });
+    }, {}, 'social');
+</script>
+
+
+
+
+
+<script>
+    //
+    // display the google ads now that the html is finished processing
+    //
+    // get ad preferences and load ads
+    // npa is already set if gtag was present
+    //
+    window.cbsoptanon.onAdsReady(function(_cbsoptanon, adOpts) {
+        googletag.cmd.push(function() {
+            googletag.enableServices();
+            MetaC.displayAds();
+            if (window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)
+                MetaC._refreshWithLightSpeed(window.metac_ads_pushdisplay);
+        });
+    });
+</script>
+
+
+
+
+<script>
+    
+    
+    gdprConsentCallback('taboola', function () {
+        if ( window._taboola && window.mcwait_taboola == null ) {
+            _taboola.push({flush: true});
+        }
+    }, {}, 'targeting', 'Ads');
+    
+</script>
+
+
+<div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
+<script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+
+
+
+
+
+
+
+<script type='text/javascript'>
+    
+    // immediate function to scope initialization
+    (function(){
+        var mc_chartbeat_page_types = ["front_door", "section_door", "article", "image_gallery", "product_overview", "product_tvepisode", "product_tvseason", "list_page"];
+        var mc_utag_page_type = "product_overview";
+
+        // only load chartbeat based on page_type
+        if (mc_chartbeat_page_types.includes(mc_utag_page_type)){
+            // If its an image gallery, it gets convaluted, see if you have a firstPhotoIdx, if you do not its a door
+            // We say /pictures/recommend is a image_gallery in utag, when its really a door
+            if (mc_utag_page_type == "image_gallery"){
+                                    mc_utag_page_type = "section_door";
+                            }
+            if (window.VideoStrategy){
+                window['_cbv_strategies'] = window['_cbv_strategies'] || [];
+                window['_cbv_strategies'].push(window.VideoStrategy);
+            }
+
+            var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+            _sf_async_config.uid = 65713;
+            _sf_async_config.domain = 'metacritic.com';
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.flickerControl = false;
+            _sf_async_config.useCanonicalDomain = true;
+            _sf_async_config.sections = mc_utag_page_type;
+            // make sure its an article, image galleries are stories and will have an author, but we only tag
+            // authors name(s) on article pages, on other pages, just pass empty string
+            if (mc_utag_page_type == "article"){
+                _sf_async_config.authors = '';
+            } else {
+                _sf_async_config.authors = '';
+            }
+
+            var _cbq = window._cbq = (window._cbq || []);
+
+                            _cbq.push(['_acct', 'anon']);
+            
+            window._sf_endpt = (new Date()).getTime();
+        }
+    })();
+    
+</script>
+<script type="text/plain" class="optanon-category-2" async src="https://static.chartbeat.com/js/chartbeat_video.js" charset="utf-8"></script>
+
+
+
+
+    
+    
+    <script>
+    	if (typeof cbsiLoadOffer == "function"){
+                cbsiLoadOffer(cbsiApexGlobal,1000);
+        }
+    </script>
+    
+</div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":1318,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+

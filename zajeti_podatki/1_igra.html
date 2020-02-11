@@ -43,8 +43,8 @@
     
     <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
     
-    <link rel="stylesheet" href="/css/global.min.1575917104.css" type="text/css">
-<link rel="stylesheet" href="/css/product/base.min.1575917074.css" type="text/css">
+    <link rel="stylesheet" href="/css/global.min.1576863225.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1576863195.css" type="text/css">
 
 
     
@@ -65,65 +65,116 @@
     
     
     
-    <script type="text/javascript">
+    
         
-        (function(id){function append(scriptid,url,async){var d=document,sn='script',f=d.getElementsByTagName(sn)[0];if(!f)f=d.head;var s=d.createElement(sn);s.async=!0;s.id=scriptid;s.src=url;f.parentNode.insertBefore(s,f)}
-        function getRootDomain(){var parts=window.location.hostname.split('.');if(parts.length===2)rootDomain=parts[0];else if(parts.length>2){var part=parts[parts.length-2];if(part==='com'||part==='co'){rootDomain=parts[parts.length-3]}
-        else{rootDomain=part}}
-        return rootDomain}
-        window.evidon={};
-        window.evidon.id=id;
-        var evidoncdn='//c.evidon.com/', cdn='//static.metacritic.com/',rootDomain=getRootDomain(),noticecdn=cdn+'sitenotice/';
-        append('evidon-notice',noticecdn+'evidon-sitenotice-tag.js', false);
-        append('evidon-location',evidoncdn+'geo/country.js', false);
-        append('evidon-themes',noticecdn+id+'/snthemes.js', true);
-        if(rootDomain)append('evidon-settings',noticecdn+id+'/'+rootDomain+'/settings.js', true);
+<script
+    src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+    type="text/javascript"
+    charset="UTF-8"
+    data-domain-script="47de5a53-b54f-48a3-bdf3-237764604a74">
+</script>
 
-        window.evidon.priorConsentCallback=function(){
-            // IX Ad Bidding
-            append('ix-lib',  (('https:' == document.location.protocol)?'https:':'http:') + '///js-sec.indexww.com/ht/ls-metacritic.js', true);
-            // GPT/DFP ads
-            append('gpt-lib', (('https:' == document.location.protocol)?'https:':'http:') + '//securepubads.g.doubleclick.net/tag/js/gpt.js', true);
-            // Google Analytics
-            append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true);
-            // Omniture
-            if (window.gdprConsent !== true) {
-                window.gdprConsent = true;
-                if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+
+<script type="application/javascript">
+    
+    (function(a){
+        var w=window,b='cbsoptanon',q='cmd',r='config';
+        w[b] = w[b] ? w[b] : {};
+        w[b][q] = w[b][q] ? w[b][q] : [];
+        w[b][r] = w[b][r] ? w[b][r] : [];
+
+        a.forEach(function(z){
+            w[b][z] = w[b][z] || function(){
+                var c=arguments;
+                w[b][q].push(function(){
+                    w[b][z].apply(w[b],c);
+                })
             }
-            // Taboola
-                        load_vendor_taboola();
-            
-            // Chartbeat
-            if (typeof MetaC.loadVendorChartbeat !== "undefined") {
-                MetaC.loadVendorChartbeat();
+        });
+    })(["onIframesReady","onFormsReady","onScriptsReady","onAdsReady"]);
+
+    //Add configs
+    window.cbsoptanon.config.push({
+        setNpaOnConsentChange: true,
+        euMaxAttempts: 25,
+        countryCodeMaxAttempts: 25,
+        oneTrustTimeout: 700,
+        enableServices: false
+    });
+
+    //Load iframes as soon as ready
+    window.cbsoptanon.onIframesReady(function(_cbsoptanon) {
+        console.log('Loading iframes');
+        _cbsoptanon.tags.load("IFRAME");
+    });
+
+    window.MetaC = window.MetaC || {};
+    MetaC.scriptExecuted = {};
+
+    function gdprConsentCallback(id, callback, callbackArgs, category, onReady) {
+        onReady = onReady || 'Scripts';
+        var opt = window.cbsoptanon['on'+onReady+'Ready'];
+        MetaC.scriptExecuted[id] = false;
+
+        opt(function(_cbsoptanon, options) {
+            //If we have categories we need to check if they are allowed
+            if (category != null) {
+                //Gets the current state of all categories
+                var checkState = function () {
+                    _cbsoptanon.ot.getState(function (targeting, performance, functional, social) {
+                        var obj = {
+                            targeting: targeting,
+                            performance: performance,
+                            functional: functional,
+                            social: social
+                        };
+
+                        if (obj[category.toLowerCase()]) {
+                            window.MetaC.scriptExecuted[id] = true;
+                            callback.apply(this, [callbackArgs, _cbsoptanon, options]);
+                        }
+                    });
+                };
+
+                checkState();
+
+                _cbsoptanon.ot.addOnConsentChangedHandler(function() {
+                    if (window.MetaC.scriptExecuted[id] !== true) {
+                        checkState();
+                    }
+                });
+            } else {
+                //Just waiting for on ready fire callback
+                callback.apply(this, [callbackArgs, _cbsoptanon, options]);
             }
-        }
-        window.evidon.closeCallback=function(){}
-        window.evidon.consentWithdrawnCallback=function(){}})(425)
-        
-    </script>
+        });
+    }
 
+    // Function to add scripts to the page
+    function append(scriptid,url,async){var d=document,sn='script',f=d.getElementsByTagName(sn)[0];if(!f)f=d.head;var s=d.createElement(sn);s.async=!0;s.id=scriptid;s.src=url;f.parentNode.insertBefore(s,f)}
+    // Set up Googletag cmd queue and init with disabling initial load
     
     
+    window.googletag = window.googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function() {
+        googletag.pubads().disableInitialLoad();
+    });
     
-    <script type="text/javascript" src="/js/global.min.1575917104.js"></script>
+</script>
 
+<script src="https://production-cmp.isgprivacy.cbsi.com/dist/optanon.js" type="application/javascript" async></script>
 
-    <script type="text/javascript">
+    <script type="application/javascript">
         
-        
-        var googletag = googletag || {};
-        googletag.cmd = googletag.cmd || [];
-        window.metac_ads_pushdisplay = window.metac_ads_pushdisplay || [];
-        window.metac_gallery_ads_pushdisplay = window.metac_gallery_ads_pushdisplay || [];
-        window.metac_hover_ads_pushdisplay = window.metac_hover_ads_pushdisplay || [];
-        
-    </script>
-
-    <script type="text/javascript">
-        
-    	MC_USER_LOGGED_IN = false;
+        // IX Ad Bidding
+        function loadVendorIx() { append('ix-lib',  (('https:' == document.location.protocol)?'https:':'http:') + '///js-sec.indexww.com/ht/ls-metacritic.js', true); }
+        gdprConsentCallback('ix-ad-bidding', loadVendorIx, {}, 'targeting');
+        // GPT/DFP ads
+        append('gpt-lib', (('https:' == document.location.protocol)?'https:':'http:') + '//securepubads.g.doubleclick.net/tag/js/gpt.js', true);
+        // Google Analytics
+        function loadVendorGoogleAnalytics() { append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true); }
+        gdprConsentCallback('google-analytics', loadVendorGoogleAnalytics, {}, 'performance');
         
         
                     
@@ -140,7 +191,30 @@
                 document.getElementsByTagName('script')[0],
                 '//cdn.taboola.com/libtrc/cbsinteractive-metacritic/loader.js');
             }
+            gdprConsentCallback('taboola', load_vendor_taboola, {}, 'targeting');
             
+                    </script>
+
+    
+    
+    
+    <script type="text/javascript" src="/js/global.min.1576863225.js"></script>
+
+
+    <script type="text/javascript">
+        
+        
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        window.metac_ads_pushdisplay = window.metac_ads_pushdisplay || [];
+        window.metac_gallery_ads_pushdisplay = window.metac_gallery_ads_pushdisplay || [];
+        window.metac_hover_ads_pushdisplay = window.metac_hover_ads_pushdisplay || [];
+        
+    </script>
+
+    <script type="text/javascript">
+        
+    	MC_USER_LOGGED_IN = false;
             </script>
 
     
@@ -223,11 +297,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/nominations-for-77th-golden-globe-awards">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/film_marriagestory-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/film_marriagestory-180.jpg" alt="2019 Golden Globe Nominations Image" />
+                                        <a href="/pictures/worst-movies-of-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/worst_movies_2019-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/worst_movies_2019-180.jpg" alt="The 15 Worst Movies of 2019 Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/nominations-for-77th-golden-globe-awards">2019 Golden Globe Nominations</a></span>
+                                        <span class="primary_feature_text"><a href="/pictures/worst-movies-of-2019">The 15 Worst Movies of 2019</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/movie">More Reports</a>
@@ -259,11 +333,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/gamescorecard_late2019early2020-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/gamescorecard_late2019early2020-180.jpg" alt="Notable Video Game Releases: New and Upcoming Image" />
+                                        <a href="/feature/new-free-games-playstation-xbox-pc-switch">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/freegamesREV-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/freegamesREV-180.jpg" alt="This Month's Free Games Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Notable Video Game Releases: New and Upcoming</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/new-free-games-playstation-xbox-pc-switch">This Month's Free Games</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/game">More Reports</a>
@@ -294,11 +368,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/now-streaming-on-netflix">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/netflix202001-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/netflix202001-180.jpg" alt="What to Watch Now on Netflix Image" />
+                                        <a href="/feature/tv-premiere-dates">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpremieredates-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpremieredates-180.jpg" alt="2020 TV Premiere Calendar Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/now-streaming-on-netflix">What to Watch Now on Netflix</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/tv-premiere-dates">2020 TV Premiere Calendar</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/tv">More Reports</a>
@@ -327,11 +401,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/pictures/best-debut-albums-of-2019">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/best_albums_2019_billieeilish-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/best_albums_2019_billieeilish-180.jpg" alt="The Freshman 15: 2019's Best Debut Albums Image" />
+                                        <a href="/feature/best-albums-released-in-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/best_albums_2019_nickcave-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/best_albums_2019_nickcave-180.jpg" alt="The Best Albums of 2019 Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/pictures/best-debut-albums-of-2019">The Freshman 15: 2019's Best Debut Albums</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/best-albums-released-in-2019">The Best Albums of 2019</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/album">More Reports</a>
@@ -382,13 +456,13 @@
                 <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
             </div>
 
-                                                                                                                <nav id="secondary_nav_games" class="secondary_nav_list">
-                        <a href="/browse/games/release-date/new-releases/n64/date">New Releases</a>
-                        <a href="/browse/games/release-date/coming-soon/n64/date">Coming Soon</a>
-                        <a href="/browse/games/score/metascore/90day/n64/filtered">Best Games</a>
+                                                <nav id="secondary_nav_games" class="secondary_nav_list">
+                        <a href="/browse/games/release-date/new-releases/all/date">New Releases</a>
+                        <a href="/browse/games/release-date/coming-soon/all/date">Coming Soon</a>
+                        <a href="/browse/games/score/metascore/90day/all/filtered">Best Games</a>
                         <a href="/browse/games/publication/reviewed">Publications</a>
                         <a href="/browse/games/company/reviewed">Publishers</a>
-                        <a href="/browse/games/trailers/n64/date">Trailers</a>
+                        <a href="/browse/games/trailers/all/date">Trailers</a>
                     </nav>
                                     </nav>
         <header id="primary_backdrop">
@@ -649,7 +723,7 @@
 
         
         <div class="summary">
-            <p><span class="desc">Universal acclaim</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/nintendo-64/the-legend-of-zelda-ocarina-of-time/user-reviews">4776 Ratings</a></span></p>
+            <p><span class="desc">Universal acclaim</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/nintendo-64/the-legend-of-zelda-ocarina-of-time/user-reviews">4799 Ratings</a></span></p>
         </div>
     </div>
 </div>
@@ -671,7 +745,7 @@
                     <div class="rating_picker_std">
                 <div class="rating_label">Rate this:</div>
                 <ul class="rating_actions rating_values rating_values_game ">
-                <input type="hidden" name="csrf" value="94e1622648f2173d6f9cb53060af118f" />
+                <input type="hidden" name="csrf" value="8152166f96772e6813ce9d9d10bfee8f" />
                                     <li class="rating_value_item rating_value_100">
                         <div class="rating_action rating_action_game rating_action_100 "
                            rel="nofollow"
@@ -816,7 +890,7 @@
                         <div class="rating_picker_std">
                             <div class="rating_label">Rate this:</div>
                             <ul class="rating_actions rating_values rating_values_game ">
-                                <input type="hidden" name="csrf" value="94e1622648f2173d6f9cb53060af118f" />
+                                <input type="hidden" name="csrf" value="8152166f96772e6813ce9d9d10bfee8f" />
                                                                     <li class="rating_value_item rating_value_100">
                                         <div class="rating_action rating_action_game rating_action_100 "
                                            rel="nofollow"
@@ -933,16 +1007,16 @@
 
             <div>
                 <div class="score_details userscore_details">
-                        <div class="score_summary">
+                    <div class="score_summary">
     <div class="userscore_wrap feature_userscore">
         <div class="label">User Score</div>
                 
-<div class="metascore_w user large game positive">9.1</div>
+<div class="metascore_w user large game tbd">tbd</div>
 
 
         
         <div class="summary">
-            <p><span class="desc">Universal acclaim</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>4776 Ratings</strong></span></p>
+            <p><span class="desc">No user score yet</span><span class="count"><span class="separator">- </span><span class="befirst_msg">Be the first to review!</span></span></p>
         </div>
     </div>
 </div>
@@ -1849,8 +1923,8 @@
                     <span class="label">Positive:</span>
                     <span class="data">
                         <a href="/game/nintendo-64/the-legend-of-zelda-ocarina-of-time/user-reviews?dist=positive">                            <span class="total" style="width:100%;">
-                                <span class="count">940</span>
-                                <span class="distribution positive"> out of 1024</span>
+                                <span class="count">943</span>
+                                <span class="distribution positive"> out of 1027</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1861,7 +1935,7 @@
                     <span class="data">
                         <a href="/game/nintendo-64/the-legend-of-zelda-ocarina-of-time/user-reviews?dist=neutral">                            <span class="total" style="width:5%;">
                                 <span class="count">44</span>
-                                <span class="distribution mixed"> out of 1024</span>
+                                <span class="distribution mixed"> out of 1027</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1872,7 +1946,7 @@
                     <span class="data">
                         <a href="/game/nintendo-64/the-legend-of-zelda-ocarina-of-time/user-reviews?dist=negative">                            <span class="total" style="width:4%;">
                                 <span class="count">40</span>
-                                <span class="distribution negative"> out of 1024</span>
+                                <span class="distribution negative"> out of 1027</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1882,17 +1956,17 @@
 </div>
 
                                                 <ol class="reviews user_reviews">
-                                                            <li id="user_review_3372079" class="review user_review first_review">
+                                                            <li id="user_review_3578612" class="review user_review first_review">
                     <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
                         <div class="review_content" >
                             <div class="review_section">
                                 <div class="review_stats">
                                     <div class="review_critic">
                                         <div class="name">
-                                                                                            <a href="/user/Seraphym88">Seraphym88</a>
+                                                                                            <a href="/user/TheCorf">TheCorf</a>
                                                                                                                                 </div>
 
-                                                                                    <div class="date">Jul 28, 2013</div>
+                                                                                    <div class="date">Sep 21, 2013</div>
                                                                             </div>
                                     
                                     <div class="review_grade">
@@ -1903,7 +1977,7 @@
                                 </div>
                                 <div class="review_body">
                                                         
-                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_3372079"><span class="blurb blurb_collapsed">Please believe me when i say, everyone who rated this game bad, is a troll. This game is the most widely regarded 'best video game ever made'.</span><span class="blurb blurb_expanded">Please believe me when i say, everyone who rated this game bad, is a troll. This game is the most widely regarded 'best video game ever made'.  Play it.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_3578612"><span class="blurb blurb_collapsed">This is the best game i have ever played, the game got lot of replayability and it will always be just as amazing as the last time you played</span><span class="blurb blurb_expanded">This is the best game i have ever played, the game got lot of replayability and it will always be just as amazing as the last time you played it, the few bugs here and there are not game breaking and mostly used by speedrunners.<br/>For a game on the very limited N64 it is extremely beautiful and huge, the atmosphere and story is very gripping and even a young kid can, as in many other Nintendo games, play this while still feeling the magic of everything even without perfect understanding of the story.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
             </div>
 
                             </div>
@@ -1930,17 +2004,17 @@
                                                     </div>
                     </div></div></div></div>
                 </li>
-                                                                                    <li id="user_review_1415846" class="review user_review">
+                                                                                    <li id="user_review_1415848" class="review user_review">
                     <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
                         <div class="review_content" >
                             <div class="review_section">
                                 <div class="review_stats">
                                     <div class="review_critic">
                                         <div class="name">
-                                                                                            <span>BenG.</span>
+                                                                                            <span>JonathanG.</span>
                                                                                                                                 </div>
 
-                                                                                    <div class="date">Apr 29, 2006</div>
+                                                                                    <div class="date">May 26, 2006</div>
                                                                             </div>
                                     
                                     <div class="review_grade">
@@ -1951,7 +2025,7 @@
                                 </div>
                                 <div class="review_body">
                                                         
-                                        <span> Absolute perfection. This game takes the Zelda series flawlessly into 3D. 10, 15 years from now, this game will still be the best game ever made.</span>
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1415848"><span class="blurb blurb_collapsed"> Easily the best adventure game ever. It has a great story and a huge world. I love this game even though is realy old. The sequel is fun but</span><span class="blurb blurb_expanded"> Easily the best adventure game ever. It has a great story and a huge world. I love this game even though is realy old. The sequel is fun but not as fun as this one.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
             </div>
 
                             </div>
@@ -2033,17 +2107,17 @@
                                                     </div>
                     </div></div></div></div>
                 </li>
-                                                                                    <li id="user_review_6935888" class="review user_review">
+                                                                                    <li id="user_review_6981535" class="review user_review">
                     <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
                         <div class="review_content" >
                             <div class="review_section">
                                 <div class="review_stats">
                                     <div class="review_critic">
                                         <div class="name">
-                                                                                            <a href="/user/weskergamer">weskergamer</a>
+                                                                                            <a href="/user/Matthew03">Matthew03</a>
                                                                                                                                 </div>
 
-                                                                                    <div class="date">Jan 23, 2017</div>
+                                                                                    <div class="date">Feb 21, 2017</div>
                                                                             </div>
                                     
                                     <div class="review_grade">
@@ -2054,7 +2128,7 @@
                                 </div>
                                 <div class="review_body">
                                                         
-                                        <span>.......................................Simply, the best videogame ever made...........................................................................</span>
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_6981535"><span class="blurb blurb_collapsed">Why play any other Zelda game? This is the best N64 and Link game ever made!!! The best graphics and the best story. Go play the game to</span><span class="blurb blurb_expanded">Why play any other Zelda game? This is the best N64 and Link game ever made!!! The best graphics and the best story. Go play the game to understand how great OOT is.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
             </div>
 
                             </div>
@@ -2211,7 +2285,7 @@
 				<a href="/login">
 				<span class="total_ups">0</span>
 				of 
-				<span class="total_thumbs">11</span>
+				<span class="total_thumbs">14</span>
 				users found this helpful
                 </a>
 			</div>
@@ -2226,7 +2300,7 @@
                     </div></div></div></div>
                 </li>
                                             </ol>
-                                    <p class="see_all"><a href="/game/nintendo-64/the-legend-of-zelda-ocarina-of-time/user-reviews">See all 1024 User Reviews</a></p>
+                                    <p class="see_all"><a href="/game/nintendo-64/the-legend-of-zelda-ocarina-of-time/user-reviews">See all 1027 User Reviews</a></p>
                                                                 </div>
     </div>
 
@@ -2252,7 +2326,7 @@
 <div id="tv-game-music-amazon-shopping-unit">
   <div id="amzn-assoc-ad-59f8e9e4-5bed-4576-aacb-15693482f182" class="subrow pad_top2"></div>
 
-  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=59f8e9e4-5bed-4576-aacb-15693482f182"></script>
+  <script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=59f8e9e4-5bed-4576-aacb-15693482f182"></script>
 </div>
 
 
@@ -2880,7 +2954,7 @@
     </div>
 
     <div class="about_cbs">
-        <div id="footer_about_links">
+        <div class="footer_about_links">
             <a class="first" href="https://www.cbsinteractive.com" target="_blank">About CBS Interactive</a>
             <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/careers/" target="_blank">Jobs</a>
             <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/advertise/" target="_blank">Advertise</a>
@@ -2888,6 +2962,10 @@
             <span class="link_divider">|</span><a href="https://www.metacritic.com/about-metacritic">About Metacritic</a>
             <span class="link_divider">|</span><a href="https://cbsi.secure.force.com/CBSi/knowledgehome?referer=metacritic.com">Help & Support</a>
             <span class="link_divider">|</span><a href="https://www.metacritic.com/contact-us">Contact</a>
+        </div>
+        <div class="footer_about_links">
+            <span><a href="https://ca.privacy.cbs" target="_blank">California Privacy/Info We Collect</a></span>
+            <span class="link_divider">|</span><span><a href="https://ca.privacy.cbs/donotsell" target="_blank">California Do Not Sell My Info</a></span>
             <span class="link_divider">|</span><span id="footer_privacy"><a href="https://legalterms.cbsinteractive.com/privacy" target="_blank">Privacy Policy</a></span>
             <span class="link_divider">|</span><span id="footer_terms"><a href="https://cbsi.secure.force.com/CBSi/articles/FAQ/CBSi-Terms-of-Use?template=template_tougl&referer=tougl.com&data=&cfs=default" target="_blank">Terms of Use</a></span>
                             <span class="link_divider">|</span><span id="footer_attribution"><a href="https://www.gamespot.com/" target="_blank">Gamespot</a></span>
@@ -2902,7 +2980,7 @@
 
     
     <div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
-    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+    <script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
 
 </div>
 
@@ -2917,8 +2995,7 @@
     var MC_UUID = uuid.v1();
 </script>
 
-                                                                                                                                                                                                                                                    
-    
+                                                                                                                                                            
 
  
 <script language="JavaScript" type="text/javascript">
@@ -2978,8 +3055,6 @@
                     googletag.pubads().setTargeting("game", "the-legend-of-zelda-ocarina-of-time");
                     googletag.pubads().setTargeting("con", "nintendo-64");
                     googletag.pubads().setTargeting("franchise", "Legend-of-Zelda-Series");
-                    googletag.pubads().setTargeting("genre", "action-adventure, fantasy-action-adventure");
-                    googletag.pubads().setTargeting("score", "99");
                             googletag.pubads().setTargeting("test", "mcold");
                 
         googletag.pubads().setTargeting("vguid", MC_UUID);
@@ -3018,9 +3093,18 @@
 
         googletag.pubads().enableSingleRequest();
         googletag.pubads().collapseEmptyDivs();
-        if (window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)
-            googletag.pubads().disableInitialLoad();
-        googletag.enableServices();
+    });
+    //
+    // get ad preferences and load ads
+    // npa is already set if gtag was present
+    //
+    window.cbsoptanon.onAdsReady(function(_cbsoptanon, adOpts) {
+        googletag.cmd.push(function() {
+            googletag.enableServices();
+            if (!(window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)) {
+                googletag.pubads().refresh();
+            }
+        });
     });
     
     
@@ -3033,8 +3117,6 @@
                     MetaC.Video.setIMATargeting("game", "the-legend-of-zelda-ocarina-of-time");
                     MetaC.Video.setIMATargeting("con", "nintendo-64");
                     MetaC.Video.setIMATargeting("franchise", "Legend-of-Zelda-Series");
-                    MetaC.Video.setIMATargeting("genre", "action-adventure, fantasy-action-adventure");
-                    MetaC.Video.setIMATargeting("score", "99");
                     
     }
     
@@ -3056,13 +3138,21 @@
 
 
 
-
+    
 <script type="text/javascript">
-    (function(a,b,c,d){
-    a='//tags.tiqcdn.com/utag/cbsi/metacriticsite/prod/utag.js';
-    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-    })();
+    window.cbsoptanon.onScriptsReady(function(cmp) {
+        //
+        // fire off tealium if the banner is not present after
+        // onetrust has loaded. (cbsoptanon has a promise polyfill)
+        //
+        cmp.ot.awaitInitialConsent(function() {
+            (function(a,b,c,d){
+            a='//tags.tiqcdn.com/utag/cbsi/metacriticsite/prod/utag.js';
+            b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+            a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+            })();
+        });
+    });
 </script>
 
 
@@ -3118,71 +3208,85 @@
 
 <div id="fb-root"></div>
 <script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '123113677890173',
-            version    : 'v2.6',
-            channelUrl : 'https://www.metacritic.com/static/fbchannel.html',
-            status     : true,
-            xfbml      : true,
-            cookie     : true
-            });
-         MetaC.FB.initialized();
-        };
-    
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    gdprConsentCallback('facebook', function () {
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '123113677890173',
+                version    : 'v2.6',
+                channelUrl : 'https://www.metacritic.com/static/fbchannel.html',
+                status     : true,
+                xfbml      : true,
+                cookie     : true
+                });
+            MetaC.FB.initialized();
+            };
+        
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, {}, 'social');
     
 </script>
 
 
 
 <script>
-    window.twttr = (function (d,s,id) {
-      var t, js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
-      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
-      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
-    }(document, "script", "twitter-wjs"));
+    gdprConsentCallback('twitter', function () {
+        window.twttr = (function (d,s,id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+        js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));
 
-    twttr.ready(function (twttr) {
-        MetaC.Twitter.initialized();
+        twttr.ready(function (twttr) {
+            MetaC.Twitter.initialized();
+        });
+    }, {}, 'social');
+</script>
+
+
+
+
+
+<script>
+    //
+    // display the google ads now that the html is finished processing
+    //
+    // get ad preferences and load ads
+    // npa is already set if gtag was present
+    //
+    window.cbsoptanon.onAdsReady(function(_cbsoptanon, adOpts) {
+        googletag.cmd.push(function() {
+            googletag.enableServices();
+            MetaC.displayAds();
+            if (window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)
+                MetaC._refreshWithLightSpeed(window.metac_ads_pushdisplay);
+        });
     });
 </script>
 
 
 
 
-
-<script>
-    /* display the google ads now that the html is finished processing */
-    googletag.cmd.push(function() {
-        MetaC.displayAds();
-        if (window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)
-            MetaC._refreshWithLightSpeed(window.metac_ads_pushdisplay);
-    });
-</script>
-
-
-
-
 <script>
     
     
-    if ( window._taboola && window.mcwait_taboola == null ) {
-        _taboola.push({flush: true});
-    }
+    gdprConsentCallback('taboola', function () {
+        if ( window._taboola && window.mcwait_taboola == null ) {
+            _taboola.push({flush: true});
+        }
+    }, {}, 'targeting', 'Ads');
     
 </script>
 
 
-    <div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
-    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+<div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
+<script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
 
 
 
@@ -3192,61 +3296,48 @@
 
 <script type='text/javascript'>
     
-    if (utag_data && utag_data.pageType){
-        // immediate function to scope initialization
-        (function(){
-            let mc_chartbeat_page_types = ["front_door", "section_door", "article", "image_gallery", "product_overview", "product_tvepisode", "product_tvseason", "list_page"];
-            let mc_utag_page_type = utag_data.pageType;
+    // immediate function to scope initialization
+    (function(){
+        var mc_chartbeat_page_types = ["front_door", "section_door", "article", "image_gallery", "product_overview", "product_tvepisode", "product_tvseason", "list_page"];
+        var mc_utag_page_type = "product_overview";
 
-            // only load chartbeat based on page_type
-            if (mc_chartbeat_page_types.includes(mc_utag_page_type)){
-                // If its an image gallery, it gets convaluted, see if you have a firstPhotoIdx, if you do not its a door
-                // We say https://www.metacritic.com/pictures/recommend is a image_gallery in utag, when its really a door
-                if (mc_utag_page_type == "image_gallery"){
-                                            mc_utag_page_type = "section_door";
-                                    }
-                if (window.VideoStrategy){
-                    window['_cbv_strategies'] = window['_cbv_strategies'] || [];
-                    window['_cbv_strategies'].push(window.VideoStrategy);
-                }
-
-                var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
-                _sf_async_config.uid = 65713;
-                _sf_async_config.domain = 'metacritic.com';
-                _sf_async_config.useCanonical = true;
-                _sf_async_config.flickerControl = false;
-                _sf_async_config.useCanonicalDomain = true;
-                _sf_async_config.sections = mc_utag_page_type;
-                // make sure its an article, image galleries are stories and will have an author, but we only tag
-                // authors name(s) on article pages, on other pages, just pass empty string
-                if (mc_utag_page_type == "article"){
-                    _sf_async_config.authors = '';
-                } else {
-                    _sf_async_config.authors = '';
-                }
-
-                var _cbq = window._cbq = (window._cbq || []);
-                if (utag_data.userState == "authenticated"){
-                    _cbq.push(['_acct', 'lgdin']);
-                } else {
-                    _cbq.push(['_acct', 'anon']);
-                }
-
-                // assuming MetaC has been defined
-                MetaC.loadVendorChartbeat = function () {
-                    window._sf_endpt = (new Date()).getTime();
-                    var e = document.createElement('script');
-                    e.setAttribute('language', 'javascript');
-                    e.setAttribute('type', 'text/javascript');
-                    e.setAttribute('async', 1);
-                    e.setAttribute('src', '//static.chartbeat.com/js/chartbeat_video.js');
-                    document.body.appendChild(e);
-                }
+        // only load chartbeat based on page_type
+        if (mc_chartbeat_page_types.includes(mc_utag_page_type)){
+            // If its an image gallery, it gets convaluted, see if you have a firstPhotoIdx, if you do not its a door
+            // We say /pictures/recommend is a image_gallery in utag, when its really a door
+            if (mc_utag_page_type == "image_gallery"){
+                                    mc_utag_page_type = "section_door";
+                            }
+            if (window.VideoStrategy){
+                window['_cbv_strategies'] = window['_cbv_strategies'] || [];
+                window['_cbv_strategies'].push(window.VideoStrategy);
             }
-        })();
-    }
+
+            var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+            _sf_async_config.uid = 65713;
+            _sf_async_config.domain = 'metacritic.com';
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.flickerControl = false;
+            _sf_async_config.useCanonicalDomain = true;
+            _sf_async_config.sections = mc_utag_page_type;
+            // make sure its an article, image galleries are stories and will have an author, but we only tag
+            // authors name(s) on article pages, on other pages, just pass empty string
+            if (mc_utag_page_type == "article"){
+                _sf_async_config.authors = '';
+            } else {
+                _sf_async_config.authors = '';
+            }
+
+            var _cbq = window._cbq = (window._cbq || []);
+
+                            _cbq.push(['_acct', 'anon']);
+            
+            window._sf_endpt = (new Date()).getTime();
+        }
+    })();
     
 </script>
+<script type="text/plain" class="optanon-category-2" async src="https://static.chartbeat.com/js/chartbeat_video.js" charset="utf-8"></script>
 
 
 
@@ -3261,6 +3352,6 @@
     
 </div>
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":2133,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":582,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
 

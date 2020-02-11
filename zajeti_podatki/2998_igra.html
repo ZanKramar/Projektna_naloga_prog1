@@ -1,0 +1,2543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "https://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en">
+<head>
+        	<title>You Don't Know Jack for PlayStation 3 Reviews - Metacritic</title>
+	
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"860f7644b8",applicationID:"2033002"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+
+    
+    <meta name="description" content="Metacritic Game Reviews, You Don't Know Jack for PlayStation 3, The classic smart-aleck quiz show game is making its debut on current-generation consoles....">
+
+    
+    
+    <meta name="viewport" content="width=1024">
+
+    
+    
+
+    
+    <meta name="application-name" content="Metacritic">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/images/win8tile/76bf1426-2886-4b87-ae1c-06424b6bb8a2.png">
+
+    
+    
+                                        <meta property="og:title" content="You Don&#039;t Know Jack">
+                                                <meta property="og:type" content="game">
+                                                <meta property="og:url" content="https://www.metacritic.com/game/playstation-3/you-dont-know-jack">
+                                                <meta property="og:image" content="https://static.metacritic.com/images/products/games/8/f4d6a96750a2bba7936d0e0069c40bdf-98.jpg">
+                                                <meta property="og:site_name" content="Metacritic">
+                                                <meta property="fb:app_id" content="123113677890173">
+                                                <meta property="twitter:site" content="@metacritic">
+                                                <meta property="twitter:creator" content="@metacritic">
+                                                <meta name="twitter:card" content="https://static.metacritic.com/images/products/games/8/f4d6a96750a2bba7936d0e0069c40bdf-98.jpg">
+                                                <meta property="og:description" content="You Don&#039;t Know Jack for PlayStation 3 game reviews &amp; Metacritic score: The classic smart-aleck quiz show game is making its debut on current-generation consoles....">
+                        
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
+    
+    <link rel="stylesheet" href="/css/global.min.1576863225.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1576863195.css" type="text/css">
+
+
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    
+    <link rel="icon" href="/MC_favicon.png"/>
+
+    
+     
+        <link rel="canonical" href="https://www.metacritic.com/game/playstation-3/you-dont-know-jack" />
+        
+    
+
+    
+        
+    
+    
+    
+    
+        
+<script
+    src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+    type="text/javascript"
+    charset="UTF-8"
+    data-domain-script="47de5a53-b54f-48a3-bdf3-237764604a74">
+</script>
+
+
+<script type="application/javascript">
+    
+    (function(a){
+        var w=window,b='cbsoptanon',q='cmd',r='config';
+        w[b] = w[b] ? w[b] : {};
+        w[b][q] = w[b][q] ? w[b][q] : [];
+        w[b][r] = w[b][r] ? w[b][r] : [];
+
+        a.forEach(function(z){
+            w[b][z] = w[b][z] || function(){
+                var c=arguments;
+                w[b][q].push(function(){
+                    w[b][z].apply(w[b],c);
+                })
+            }
+        });
+    })(["onIframesReady","onFormsReady","onScriptsReady","onAdsReady"]);
+
+    //Add configs
+    window.cbsoptanon.config.push({
+        setNpaOnConsentChange: true,
+        euMaxAttempts: 25,
+        countryCodeMaxAttempts: 25,
+        oneTrustTimeout: 700,
+        enableServices: false
+    });
+
+    //Load iframes as soon as ready
+    window.cbsoptanon.onIframesReady(function(_cbsoptanon) {
+        console.log('Loading iframes');
+        _cbsoptanon.tags.load("IFRAME");
+    });
+
+    window.MetaC = window.MetaC || {};
+    MetaC.scriptExecuted = {};
+
+    function gdprConsentCallback(id, callback, callbackArgs, category, onReady) {
+        onReady = onReady || 'Scripts';
+        var opt = window.cbsoptanon['on'+onReady+'Ready'];
+        MetaC.scriptExecuted[id] = false;
+
+        opt(function(_cbsoptanon, options) {
+            //If we have categories we need to check if they are allowed
+            if (category != null) {
+                //Gets the current state of all categories
+                var checkState = function () {
+                    _cbsoptanon.ot.getState(function (targeting, performance, functional, social) {
+                        var obj = {
+                            targeting: targeting,
+                            performance: performance,
+                            functional: functional,
+                            social: social
+                        };
+
+                        if (obj[category.toLowerCase()]) {
+                            window.MetaC.scriptExecuted[id] = true;
+                            callback.apply(this, [callbackArgs, _cbsoptanon, options]);
+                        }
+                    });
+                };
+
+                checkState();
+
+                _cbsoptanon.ot.addOnConsentChangedHandler(function() {
+                    if (window.MetaC.scriptExecuted[id] !== true) {
+                        checkState();
+                    }
+                });
+            } else {
+                //Just waiting for on ready fire callback
+                callback.apply(this, [callbackArgs, _cbsoptanon, options]);
+            }
+        });
+    }
+
+    // Function to add scripts to the page
+    function append(scriptid,url,async){var d=document,sn='script',f=d.getElementsByTagName(sn)[0];if(!f)f=d.head;var s=d.createElement(sn);s.async=!0;s.id=scriptid;s.src=url;f.parentNode.insertBefore(s,f)}
+    // Set up Googletag cmd queue and init with disabling initial load
+    
+    
+    window.googletag = window.googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function() {
+        googletag.pubads().disableInitialLoad();
+    });
+    
+</script>
+
+<script src="https://production-cmp.isgprivacy.cbsi.com/dist/optanon.js" type="application/javascript" async></script>
+
+    <script type="application/javascript">
+        
+        // IX Ad Bidding
+        function loadVendorIx() { append('ix-lib',  (('https:' == document.location.protocol)?'https:':'http:') + '///js-sec.indexww.com/ht/ls-metacritic.js', true); }
+        gdprConsentCallback('ix-ad-bidding', loadVendorIx, {}, 'targeting');
+        // GPT/DFP ads
+        append('gpt-lib', (('https:' == document.location.protocol)?'https:':'http:') + '//securepubads.g.doubleclick.net/tag/js/gpt.js', true);
+        // Google Analytics
+        function loadVendorGoogleAnalytics() { append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true); }
+        gdprConsentCallback('google-analytics', loadVendorGoogleAnalytics, {}, 'performance');
+        
+        
+                    
+            window._taboola = window._taboola || [];
+            function load_vendor_taboola(){
+                _taboola.push({
+                    other : 'auto'
+                });
+                !function (e, f, u) {
+                    e.async = 1;
+                    e.src = u;
+                    f.parentNode.insertBefore(e, f);
+                }(document.createElement('script'),
+                document.getElementsByTagName('script')[0],
+                '//cdn.taboola.com/libtrc/cbsinteractive-metacritic/loader.js');
+            }
+            gdprConsentCallback('taboola', load_vendor_taboola, {}, 'targeting');
+            
+                    </script>
+
+    
+    
+    
+    <script type="text/javascript" src="/js/global.min.1576863225.js"></script>
+
+
+    <script type="text/javascript">
+        
+        
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        window.metac_ads_pushdisplay = window.metac_ads_pushdisplay || [];
+        window.metac_gallery_ads_pushdisplay = window.metac_gallery_ads_pushdisplay || [];
+        window.metac_hover_ads_pushdisplay = window.metac_hover_ads_pushdisplay || [];
+        
+    </script>
+
+    <script type="text/javascript">
+        
+    	MC_USER_LOGGED_IN = false;
+            </script>
+
+    
+    <script src="//vidtech.cbsinteractive.com/uvpjs/2.9.52/CBSI-PLAYER.js"></script>
+    <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+</head>
+
+    <body class="skybox-auto-collapse">
+
+
+
+
+<div id="site_layout">
+    <div id="masthead">
+        
+
+                    
+            <div id="nav_ad_wrapper">
+                                    
+                        
+                        <div id="nav_ad" class="ad_unit skybox-closeBtn skybox-collapseBtn skybox-videoStop">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_nav_ad = googletag.defineSlot("/8264/aw-metacritic/games",[[5,5],[7,7]], "nav_ad").addService(googletag.pubads()).setTargeting("pos", "nav").setCollapseEmptyDiv(true, true);
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("nav_ad");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+                            </div>
+        
+        <div id="content_header_wrapper">
+            <header id="top_header">
+    <nav id="primary_nav">
+        <nav id="primary_logo" class="primary_nav_item">
+            <a href="https://www.metacritic.com"><img src="/images/icons/dark_logo.png" alt="Metacritic logo"></a>
+        </nav>
+
+        <nav id="primary_search" class="primary_nav_item">
+            <div class="rounded_field">
+                <div class="imgs">
+                    <img class="inactive" src="/images/icons/search_inactive.png" alt="search">
+                    <img class="active" src="/images/icons/search_active.png" alt="search">
+                </div>
+                <div class="field innerLabel">
+                    <div class="input_wrapper">
+                        <form action="/search" method="post" autocomplete="off">
+                            <label for="primary_search_box">search...</label>
+                            <input name="search_term" id="primary_search_box" autocomplete="off"
+                                                            >
+                            <input type="hidden" name="search_filter" value="all">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="primary_search_results">
+
+            </div>
+        </nav>
+
+                    <nav id="primary_nav_item_movies" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/movie">
+                                                    Movies
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/pictures/worst-movies-of-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/worst_movies_2019-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/worst_movies_2019-180.jpg" alt="The 15 Worst Movies of 2019 Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/pictures/worst-movies-of-2019">The 15 Worst Movies of 2019</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/movie">More Reports</a>
+                                <a href="/movie">All Movies &gt;</a>
+                                <a href="/browse/movies/release-date/theaters/date">In Theaters</a>
+                                <a href="/browse/movies/release-date/coming-soon/date">Coming Soon</a>
+                                <a href="/browse/dvds/release-date/new-releases/date">New to DVD & Streaming</a>
+                                <a href="/browse/movies/score/metascore/all/filtered/netflix">Best of Netflix</a>
+                                <a href="/browse/movies/score/metascore/all/filtered/piv">Best of Amazon</a>
+                                <a href="/browse/movies/score/metascore/all/filtered">Best Movies of All Time</a>
+                                <a href="/browse/movies/genre/date">Browse Movies by Genre</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_games" class="primary_nav_item selected">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/game">
+                                                    Games
+                                            </a>
+                </span>
+
+                                    <span class="cutout_wrapper selected">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/new-free-games-playstation-xbox-pc-switch">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/freegamesREV-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/freegamesREV-180.jpg" alt="This Month's Free Games Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/new-free-games-playstation-xbox-pc-switch">This Month's Free Games</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/game">More Reports</a>
+                                <a href="/game">All Games &gt;</a>
+                                <a href="/game/playstation-4">PS4</a>
+                                <a href="/game/xbox-one">Xbox One</a>
+                                <a href="/game/pc">PC</a>
+                                <a href="/game/switch">Switch</a>
+                                <a href="/game/wii-u">Wii U</a>
+                                <a href="/game/3ds">3DS</a>
+                                <a href="/game/playstation-vita">PS Vita</a>
+                                <a href="/game/ios">iOS</a>
+                                <a href="/game/legacy">Legacy</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_tv" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/tv">
+                                                    TV
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/tv-premiere-dates">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpremieredates-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpremieredates-180.jpg" alt="2020 TV Premiere Calendar Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/tv-premiere-dates">2020 TV Premiere Calendar</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/tv">More Reports</a>
+                                <a href="/tv">All TV &gt;</a>
+                                <a href="/browse/tv/release-date/new-series/date">New Shows</a>
+                                <a href="/browse/tv/score/metascore/all/filtered/netflix">Best of Netflix</a>
+                                <a href="/browse/tv/score/metascore/all/filtered/piv">Best of Amazon</a>
+                                <a href="/browse/tv/score/metascore/all/filtered">Best TV Shows</a>
+                                <a href="/browse/tv/genre/date">Browse TV by Genre</a>
+                                <a href="/feature/tv-premiere-dates">TV Premiere Calendar</a>
+                                <a href="/browse/tv/release-date/returning-series/date">Returning Shows List</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_music" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/music">
+                                                    Music
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/best-albums-released-in-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/best_albums_2019_nickcave-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/best_albums_2019_nickcave-180.jpg" alt="The Best Albums of 2019 Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/best-albums-released-in-2019">The Best Albums of 2019</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/album">More Reports</a>
+                                <a href="/music">All Music &gt;</a>
+                                <a href="/browse/albums/release-date/new-releases/date">New Releases</a>
+                                <a href="/browse/albums/release-date/coming-soon/date">Coming Soon</a>
+                                <a href="/browse/albums/score/metascore/90day/filtered">Best New Albums</a>
+                                <a href="/browse/albums/score/metascore/all/filtered">Best Albums of All Time</a>
+                                <a href="/browse/albums/genre/date">Browse Music by Genre</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_features" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/feature">
+                                                    Reports
+                                            </a>
+                </span>
+
+                
+                                </nav>
+        
+        <nav id="primary_menu_item_enter_search" class="">
+            <span class="">
+                Enter to Search
+            </span>
+        </nav>
+
+
+        
+                    <nav id="primary_menu_item_create" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a id="signup" href="/signup">+ Create Account</a>
+                </span>
+            </nav>
+            <nav id="primary_menu_item_login" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a id="login" href="/login">Login</a>
+                </span>
+            </nav>
+                
+    </nav>
+
+            <nav id="secondary_nav" class="clearfix hgrayblue inset_left2 inset_right2">
+            <div id="primary_social" class="social_round">
+                <span>follow on</span>
+                <a href="https://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            </div>
+
+                                                                                                                <nav id="secondary_nav_games" class="secondary_nav_list">
+                        <a href="/browse/games/release-date/new-releases/ps3/date">New Releases</a>
+                        <a href="/browse/games/release-date/coming-soon/ps3/date">Coming Soon</a>
+                        <a href="/browse/games/score/metascore/90day/ps3/filtered">Best Games</a>
+                        <a href="/browse/games/publication/reviewed">Publications</a>
+                        <a href="/browse/games/company/reviewed">Publishers</a>
+                        <a href="/browse/games/trailers/ps3/date">Trailers</a>
+                    </nav>
+                                    </nav>
+        <header id="primary_backdrop">
+    </header>
+</header>
+
+        </div>
+    </div>
+
+     <div id="gutters" class="site_gutters">     
+         <div id="gutters_mid" class="site_gutters">     
+             <div id="gutters_btm" class="site_gutters">     
+                 <div id="gutters_top" class="site_gutters">     
+                     <div id="container">
+
+
+
+    <div id="superleader" class="leader">
+                        
+                            <div id="leader_top_wrapper" class="ad_height_min">
+                        <div id="leader_plus_top" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_plus_top = googletag.defineSlot("/8264/aw-metacritic/games",[[728,90],[970,66],[970,250],[728,91],[321,31],[7,7]], "leader_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("leader_plus_top");
+                                                            </script>
+                                        </div>
+                            </div>
+                        
+
+
+</div>
+
+
+
+<div id="col_layout" class="col_layout">
+        <div id="main_content" class="content_section mpu_layout">
+                <div class="layout">
+            
+            <div id="gutters" class="site_gutters">
+
+            
+            
+            
+            
+                        <div id="main" class="col main_col">
+                <div>
+
+
+
+    
+
+
+
+<script type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "VideoGame",
+                "applicationCategory" : "Game",
+                "name" : "You Don't Know Jack",
+        "description" : "The classic smart-aleck quiz show game is making its debut on current-generation consoles.",
+        "datePublished" : "February 8, 2011",
+        "url" : "https://www.metacritic.com/game/playstation-3/you-dont-know-jack",
+        "image" : "https://static.metacritic.com/images/products/games/8/f4d6a96750a2bba7936d0e0069c40bdf-98.jpg"
+        
+        
+                            ,"aggregateRating" : {
+                "@type" : "AggregateRating",
+                "bestRating" : "100",
+                "worstRating" : "0",
+                "ratingValue" : "82"
+                                ,"ratingCount" : "11"
+                            }
+                                    ,"contentRating" : "ESRB T"
+                                    ,"gamePlatform" : "PlayStation 3"
+            ,"operatingSystem" : "PlayStation 3"
+                                                ,"publisher" : [
+                                                {
+                        "@type":"Organization",
+                        "name": "THQ",
+                        "url": "https://www.metacritic.com/company/thq"
+                    }                                                            ]
+                            ,"genre" : [
+                             "Miscellaneous"
+                 ,                             "Trivia \/ Game Show"
+                 ,                             "Trivia \/ Game Show"
+                                         ]
+            }
+</script>
+
+<div class="content_head product_content_head game_content_head">
+            
+                <div class="sharing " data-mc-refid="157958" data-mc-reftid="30" >
+    
+    <a class="sharing-facebook" title="Share on Facebook" rel="nofollow noopener popup:external" data-mc-social-url="https://www.metacritic.com/game/playstation-3/you-dont-know-jack?ftag=fbsoshares" href="javascript:void(0);"><span class="fa fa-fw fa-facebook"></span></a><a class="sharing-twitter" title="Share on Twitter" rel="nofollow noopener popup:external" data-mc-social-url="https://www.metacritic.com/game/playstation-3/you-dont-know-jack" data-mc-tweet-prefix="https://twitter.com/intent/tweet?via=metacritic&text=You%20Don%27t%20Know%20Jack%20for%20PlayStation%203%20Reviews" href="#" target="_blank"><span class="fa fa-fw fa-twitter"></span></a><a class="sharing-reddit" title="Share on Reddit" rel="nofollow noopener popup:external" data-mc-social-track-id="6" target="_blank" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.metacritic.com%2Fgame%2Fplaystation-3%2Fyou-dont-know-jack%3Fftag%3Dredsoshares&title=You%20Don%27t%20Know%20Jack%20for%20PlayStation%203%20Reviews"><span class="fa fa-fw fa-reddit-alien"></span></a><a class="sharing-pinterest" title="Share on Pinterest" rel="nofollow noopener popup:external" data-mc-social-track-id="5" target="_blank" href="//pinterest.com/pin/create/link/?url=https%3A%2F%2Fwww.metacritic.com%2Fgame%2Fplaystation-3%2Fyou-dont-know-jack%3Fftag%3Dpinsoshares&description=You%20Don%27t%20Know%20Jack%20for%20PlayStation%203%20Reviews&media=https://static.metacritic.com/images/products/games/8/f4d6a96750a2bba7936d0e0069c40bdf.jpg"><span class="fa fa-fw fa-pinterest"></span></a></div>
+
+        <div class="product_title">
+                    <a href="/game/playstation-3/you-dont-know-jack" class="hover_none">
+                                <h1>You Don't Know Jack</h1>
+                            </a>
+                            <span class="platform">
+                		        <a href="/game/playstation-3">
+                                                        PlayStation 3
+                                                    </a>
+                		    </span>
+		    </div>
+    <div class="product_data">
+        <ul class="summary_details">
+                            <li class="summary_detail publisher" >
+                    <span class="label">Publisher:</span>
+                    <span class="data">
+											<a href="/company/thq"  >
+                                                        THQ
+                                                    </a>
+					                    </span>
+                </li>
+                                        <li class="summary_detail release_data">
+                    <span class="label">Release Date:</span>
+                    <span class="data" >Feb  8, 2011</span>
+                </li>
+                                                                                    <li class="summary_detail product_platforms">
+                            <span class="label">Also On:</span>
+                            <span class="data">
+                                        <a href="/game/ios/you-dont-know-jack" class="hover_none">iPhone/iPad</a>,                                                                            <a href="/game/pc/you-dont-know-jack-2011" class="hover_none">PC</a>,                                                                            <a href="/game/xbox-360/you-dont-know-jack" class="hover_none">Xbox 360</a>                                                </span>
+                        </li>
+                                                        </ul>
+    </div>
+</div>
+
+
+
+    <div class="content_nav">
+        <ul class="nav_items content_nav">
+                            <li class="nav nav_summary active_nav first_nav">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <span class="action">Summary</span>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_critic_reviews">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/playstation-3/you-dont-know-jack/critic-reviews">Critic Reviews</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_user_reviews">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/playstation-3/you-dont-know-jack/user-reviews">User Reviews</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_details">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/playstation-3/you-dont-know-jack/details">Details &amp; Credits</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_trailers last_nav">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <span class="disabled">Trailers &amp; Videos</span>
+                                                    </span>
+                    </span>
+                </li>
+                    </ul>
+    </div>
+
+
+
+
+
+
+
+
+    
+<div class="module product_data product_data_summary">
+    <div class="module_wrap has_image has_large_image">
+                    <div class="product_media large_media">
+                <div class="product_image large_image must_play">
+                                        <img class="product_image large_image" src="https://static.metacritic.com/images/products/games/8/f4d6a96750a2bba7936d0e0069c40bdf-98.jpg" alt="You Don't Know Jack Image"/>
+                                    </div>
+                            </div>
+                <div class="summary_wrap">
+            
+            
+            <div class="section product_scores">
+                    <div class="details main_details">
+                            
+<div class="score_summary metascore_summary">
+    <div class="metascore_wrap highlight_metascore" >
+        <div class="label">Metascore</div>
+                    
+            
+
+        
+    <a class="metascore_anchor" href="/game/playstation-3/you-dont-know-jack/critic-reviews">
+<div class="metascore_w xlarge game positive"><meta content="100"><span>82</span></div>
+    </a>
+
+
+            
+                <div class="summary">
+            <p>
+                <span class="desc">
+                                            Generally favorable reviews
+                                    </span>
+						<span class="count">
+				<span class="separator"> - </span>
+                <span class="based">based on</span>
+									<a href="/game/playstation-3/you-dont-know-jack/critic-reviews">
+                                                    <span >
+                                11
+                            </span> Critics                                            </a>
+							</span>
+			                                <span class="help"><a href="/about-metascores">What's this?</a></span>            </p>
+        </div>
+    </div>
+</div>
+
+    </div>
+            <div class="details side_details">
+                                                                            
+    <div class="score_summary">
+    <div class="userscore_wrap feature_userscore">
+        <div class="label">User Score</div>
+                
+    <a class="metascore_anchor" href="/game/playstation-3/you-dont-know-jack/user-reviews">
+<div class="metascore_w user large game mixed">7.3</div>
+    </a>
+
+
+        
+        <div class="summary">
+            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-3/you-dont-know-jack/user-reviews">18 Ratings</a></span></p>
+        </div>
+    </div>
+</div>
+                                                                
+                        
+                        <div class="score_summary yourscore_summary {'review_id': '0', 'request_url': '/jl/rate/set-rating?product_type=game&title=You+Don%27t+Know+Jack&release_date=2011-02-08+00%3A00%3A00&ref_type_id=30&ref_id=157958'} "  >
+    <div class="yourscore_wrap">
+        <div class="label label_game">Your Score</div>
+        <div class="data yourscore">
+            <span class="score_value">0</span>
+            <span class="score_total">out of 10</span>
+        </div>
+        <div class="summary feedback has_feedback">
+                    <p class="rating_error"></p>
+                    </div>
+
+    
+        <div class="rating_picker rating_picker_game">
+                    <div class="rating_picker_std">
+                <div class="rating_label">Rate this:</div>
+                <ul class="rating_actions rating_values rating_values_game ">
+                <input type="hidden" name="csrf" value="3ac65aac12135e50df2e98e31b64233c" />
+                                    <li class="rating_value_item rating_value_100">
+                        <div class="rating_action rating_action_game rating_action_100 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=10&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 10 out of 10">
+                                <span class="rating_value">10</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_90">
+                        <div class="rating_action rating_action_game rating_action_90 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=9&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 9 out of 10">
+                                <span class="rating_value">9</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_80">
+                        <div class="rating_action rating_action_game rating_action_80 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=8&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 8 out of 10">
+                                <span class="rating_value">8</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_70">
+                        <div class="rating_action rating_action_game rating_action_70 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=7&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 7 out of 10">
+                                <span class="rating_value">7</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_60">
+                        <div class="rating_action rating_action_game rating_action_60 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=6&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 6 out of 10">
+                                <span class="rating_value">6</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_50">
+                        <div class="rating_action rating_action_game rating_action_50 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=5&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 5 out of 10">
+                                <span class="rating_value">5</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_40">
+                        <div class="rating_action rating_action_game rating_action_40 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=4&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 4 out of 10">
+                                <span class="rating_value">4</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_30">
+                        <div class="rating_action rating_action_game rating_action_30 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=3&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 3 out of 10">
+                                <span class="rating_value">3</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_20">
+                        <div class="rating_action rating_action_game rating_action_20 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=2&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 2 out of 10">
+                                <span class="rating_value">2</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_10">
+                        <div class="rating_action rating_action_game rating_action_10 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=1&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 1 out of 10">
+                                <span class="rating_value">1</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_0">
+                        <div class="rating_action rating_action_game rating_action_0 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=0&ref_type_id=30&ref_id=157958"
+                                                      title="Rate 0 out of 10">
+                                <span class="rating_value">0</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_delete">
+                        <div class="rating_action rating_action_game rating_action_delete "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=-1&ref_type_id=30&ref_id=157958"
+                                                      title="Delete rating">
+                                <span class="rating_value">0</span>
+                        </div>
+                    </li>
+                                </ul>
+            </div>
+
+        
+            <div class="rating_values rating_values_game scale disabled">
+                <div class="status"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+<div class="rating_signin_tmpl">
+    <div class="message">
+        Log in to finish rating <span class="product_name">You Don't Know Jack</span>
+    </div>
+
+    <div class="product_data">
+        <div class="product_media">
+            <div class="product_image large_image">
+                <img class="product_image large_image" src="https://static.metacritic.com/images/products/games/8/f4d6a96750a2bba7936d0e0069c40bdf-98.jpg"
+                     alt="You Don't Know Jack Image" />
+            </div>
+        </div>
+        <div class="yourscore_login_wrapper">
+            <div class="product_name_wrapper">
+                <span class="product_name">You Don't Know Jack</span>
+            </div>
+            <div class="score_summary yourscore_login">
+                <div class="protector"></div>
+                <div class="yourscore_wrap">
+                    <div class="label label_game">Your Score</div>
+                    <div class="data yourscore">
+                        <span class="score_value">0</span>
+                        <span class="score_total">out of 10</span>
+                    </div>
+                    <div class="summary feedback">
+                    </div>
+
+                    
+                    <div class="rating_picker rating_picker_game">
+                        <input type="hidden" name="review_score" value="0"/>
+
+                        <div class="rating_picker_std">
+                            <div class="rating_label">Rate this:</div>
+                            <ul class="rating_actions rating_values rating_values_game ">
+                                <input type="hidden" name="csrf" value="3ac65aac12135e50df2e98e31b64233c" />
+                                                                    <li class="rating_value_item rating_value_100">
+                                        <div class="rating_action rating_action_game rating_action_100 "
+                                           rel="nofollow"
+                                           title="Rate 10 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=10&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">10</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_90">
+                                        <div class="rating_action rating_action_game rating_action_90 "
+                                           rel="nofollow"
+                                           title="Rate 9 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=9&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">9</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_80">
+                                        <div class="rating_action rating_action_game rating_action_80 "
+                                           rel="nofollow"
+                                           title="Rate 8 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=8&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">8</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_70">
+                                        <div class="rating_action rating_action_game rating_action_70 "
+                                           rel="nofollow"
+                                           title="Rate 7 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=7&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">7</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_60">
+                                        <div class="rating_action rating_action_game rating_action_60 "
+                                           rel="nofollow"
+                                           title="Rate 6 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=6&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">6</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_50">
+                                        <div class="rating_action rating_action_game rating_action_50 "
+                                           rel="nofollow"
+                                           title="Rate 5 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=5&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">5</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_40">
+                                        <div class="rating_action rating_action_game rating_action_40 "
+                                           rel="nofollow"
+                                           title="Rate 4 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=4&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">4</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_30">
+                                        <div class="rating_action rating_action_game rating_action_30 "
+                                           rel="nofollow"
+                                           title="Rate 3 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=3&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">3</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_20">
+                                        <div class="rating_action rating_action_game rating_action_20 "
+                                           rel="nofollow"
+                                           title="Rate 2 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=2&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">2</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_10">
+                                        <div class="rating_action rating_action_game rating_action_10 "
+                                           rel="nofollow"
+                                           title="Rate 1 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=1&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">1</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_0">
+                                        <div class="rating_action rating_action_game rating_action_0 "
+                                           rel="nofollow"
+                                           title="Rate 0 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=0&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">0</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_delete">
+                                        <div class="rating_action rating_action_game rating_action_delete "
+                                           rel="nofollow"
+                                           title="Delete rating"
+                                           data-rateref="/jl/rate/set-rating?score=-1&ref_type_id=30&ref_id=157958"
+                                           >
+                                            <span class="rating_value">                                                0</span>
+                                        </div>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="score_details userscore_details">
+                        <div class="score_summary">
+    <div class="userscore_wrap feature_userscore">
+        <div class="label">User Score</div>
+                
+<div class="metascore_w user large game mixed">7.3</div>
+
+
+        
+        <div class="summary">
+            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>18 Ratings</strong></span></p>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    <div class="login_wrapper" data-fbenabled="1">
+    </div>
+    <div class="after_login">
+        <div class="after_message">Would you like to write a review?</div>
+        <div class="login_success">
+            <input class="BUTTON bigger" type="button" name="review" value="Write a Review" data-href="/game/playstation-3/you-dont-know-jack/user-reviews"/>
+            <input class="BUTTON bigger gray" type="button" name="close" value="Close"/>
+            <hr />
+                                                            
+                                                                                                <div>
+                    <div class="share_message">Share this?</div>
+                    
+
+<div class="inline_social product_social">
+    
+            <div class="inline_social_button">
+            <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-count="horizontal"
+                   data-via="metacritic"
+                   data-url="https://www.metacritic.com/game/playstation-3/you-dont-know-jack"
+                   data-counturl="https://www.metacritic.com/game/playstation-3/you-dont-know-jack">
+                <img src="/images/buttons/twitter_inline.png" alt="Share this on Twitter"/>
+            </a>
+        </div>
+                <div class="inline_social_button facebook_sharing">
+        <noscript>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.metacritic.com/game/playstation-3/you-dont-know-jack&t=You Don't Know Jack for PlayStation 3 Reviews" rel="nofollow popup:external">
+                <img src="/images/buttons/facebook_inline.png" alt="Share this on Facebook" rel="nofollow" />
+            </a>
+        </noscript>
+        <fb:like href="https://www.metacritic.com/game/playstation-3/you-dont-know-jack" send="false" layout="button_count" width="100" show_faces="false" font=""></fb:like>
+        </div>
+    </div>
+
+                <div style="clear: both;"></div>
+                </div>
+                    </div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+                                                        </div>
+    
+            </div>
+                            <div class="section product_details">
+                    <div class="details main_details">
+    <ul class="summary_details">
+                    <li class="summary_detail product_summary">
+                <span class="label">Summary:</span>
+                <span class="data">
+                                                                        
+                                                                                                                                                        <span>The classic smart-aleck quiz show game is making its debut on current-generation consoles.</span>
+                                    </span>
+            </li>
+            </ul>
+    
+    <div class="esite_list"><div class="esite_items clearfix list_expand_wrapper">
+    
+        
+<div class="esite_btn_wrapper">
+    <div class="esite_btn esite_amazon esite_amazonbuy" title="Buy from Amazon">
+        <table>
+            <tr>
+                <td class="esite_label_wrapper">
+                     <span>Buy On</span>
+                 </td>	 
+                 <td class="esite_img_wrapper">
+                    <a rel="nofollow noopener" target="_blank" class="esite_url" href="http://www.amazon.com/You-Dont-Know-Jack-Playstation-3/dp/B00498T500%3FSubscriptionId%3DAKIAJHSMUOWEQCQ7QDAQ%26tag%3Dmetacritic-games-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00498T500"
+                        data-leadtype="Physical Product" data-leadtag="metacritic-games-20" data-leadid="1" data-leadname="amazon" data-leadplace="upper body"
+                                            >
+                        <img src="/images/buttons/esites/amazondotcom_30.png" alt="">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div></div><script type="text/javascript">window.eventAmazonBuyView = true;</script></div>
+</div>
+<div class="details side_details">
+    <ul class="summary_details">
+                    <li class="summary_detail developer">
+                <span class="label">Developer:</span>
+                <span class="data">
+                    Jellyvision, Iron Galaxy Studios                </span>
+            </li>
+                                            <li class="summary_detail product_genre"><span class="label">Genre(s): </span><span class="data" >Miscellaneous</span>,                                            <span class="data" >Trivia / Game Show</span>,                                            <span class="data" >Trivia / Game Show</span>                                    </li>
+                                                    <li class="summary_detail product_players">
+            <span class="label"># of players:</span>
+            <span class="data">4  Online</span>
+        </li>
+                <li class="summary_detail product_cheats">
+            <span class="label">Cheats:</span>
+            <span class="data"><a rel="popup:external" href="https://gamefaqs.gamespot.com/console/ps3/code/608655.html">On GameFAQs</a></span>
+        </li>
+
+                    <li class="summary_detail product_rating">
+                <span class="label">Rating:</span>
+                <span class="data" >T</span>
+            </li>
+                        <li class="summary_detail more">
+            <a href="/game/playstation-3/you-dont-know-jack/details">More Details and Credits &raquo;</a>
+        </li>
+    </ul>
+</div>
+
+                </div>
+                    </div>
+    </div>
+</div>
+
+
+
+    
+    <div class="module critic_user_reviews">
+    <div class="critic_user_reviews_wrap">
+        
+        
+        <div class="module reviews_module critic_reviews_module">
+                    
+                                                    
+            <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/game/playstation-3/you-dont-know-jack/critic-reviews">Critic Reviews</a></h2></div></div>
+<div class="body">
+                                <div class="score_distribution">
+    <div class="distribution_wrap">
+        <div class="distribution_title">Score distribution:</div>
+        <ol class="score_counts hover_none">
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Positive:</span>
+                    <span class="data">
+                        <a href="/game/playstation-3/you-dont-know-jack/critic-reviews?dist=positive">                            <span class="total" style="width:100%;">
+                                <span class="count">10</span>
+                                <span class="distribution positive"> out of 11</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Mixed:</span>
+                    <span class="data">
+                        <a href="/game/playstation-3/you-dont-know-jack/critic-reviews?dist=neutral">                            <span class="total" style="width:10%;">
+                                <span class="count">1</span>
+                                <span class="distribution mixed"> out of 11</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Negative:</span>
+                    <span class="data">
+                                                    <span class="total zero_total" style="width:0%;">
+                                <span class="count">0</span>
+                                <span class="distribution negative"> out of 11</span>
+                            </span>
+                                            </span>
+                </div>
+            </li>
+                    </ol>
+		    </div>
+</div>
+
+                            <ol class="reviews critic_reviews">            <li class="review critic_review first_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.gamingexcellence.com/ps3/games/2437/review.shtml">GamingExcellence</a></div><div class="date">Feb 14, 2011</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">95</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Regardless though, with this game you've got a fun solo and party game that is more than worth the asking price. I mean, if you're a party pooper then you probably won't enjoy it as much when you're losing. 
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/gamingexcellence?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.gamingexcellence.com/ps3/games/2437/review.shtml">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source">Playstation: The Official Magazine (US)</div><div class="date">Feb 10, 2011</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">90</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Party games don't garner much respect from hardcore gamers, but You Don't Know Jack deserves an exception. [March 2011, p.77]
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <div class="review_action author_reviews"><a href="/publication/playstation-the-official-magazine-us?filter=games">All this publication's reviews</a></div>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://gamerlimit.com/2011/02/gamer-limit-review-you-dont-know-jack/">Gamer Limit</a></div><div class="date">Feb 10, 2011</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">85</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                This reinvention of You Don't Know Jack is one of the best the series has had to offer, given all of the new features for this current generation.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/gamer-limit?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://gamerlimit.com/2011/02/gamer-limit-review-you-dont-know-jack/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://cheatcc.com/ps3/rev/youdontknowjackreview.html">Cheat Code Central</a></div><div class="date">Feb 16, 2011</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">84</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                The essence of You Don't Know Jack is playing with friends, having fun, and getting a good laugh. The little changes of gameplay in comparison to other entries, especially the ability to allow everyone to answer a question, make for a better experience.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/cheat-code-central?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://cheatcc.com/ps3/rev/youdontknowjackreview.html">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.videogametalk.com/reviews/1184/you-dont-know-jack/">Video Game Talk</a></div><div class="date">Feb 14, 2011</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">80</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                In any case, You Don't Know Jack is an excellent choice for parties or simply those looking for a great trivia challenge with a liberal dose of silly humor.  
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/video-game-talk?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.videogametalk.com/reviews/1184/you-dont-know-jack/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.gamespot.com/ps3/puzzle/youdontknowjack/review.html">GameSpot</a></div><div class="date">Feb  9, 2011</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">80</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                The brash trivia franchise returns to the stage for a very successful new outing.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/gamespot?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.gamespot.com/ps3/puzzle/youdontknowjack/review.html">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review last_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.gaming-age.com/review/ps3/ydkj">Gaming Age</a></div><div class="date">Mar 14, 2011</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game mixed indiv">67</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Even with 73 episodes and online play, the $30 price tag still seems a little steep especially with how the game is structured and the relative lack of customization or options. Fans may want to check it out though.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/gaming-age?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.gaming-age.com/review/ps3/ydkj">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                        </ol>
+                        </div>
+
+    
+    
+                        <p class="see_all"><a href="/game/playstation-3/you-dont-know-jack/critic-reviews">See all 11 Critic Reviews</a></p>
+                    
+    </div>
+            <div class="module reviews_module user_reviews_module">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/game/playstation-3/you-dont-know-jack/user-reviews">User Reviews</a></h2></div></div>
+            <div class="write_review"><a class="write_review" href="/game/playstation-3/you-dont-know-jack/user-reviews"><span>Write a Review</span></a></div>
+        <div class="body">
+                                            <div class="score_distribution">
+    <div class="distribution_wrap">
+        <div class="distribution_title">Score distribution:</div>
+        <ol class="score_counts hover_none">
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Positive:</span>
+                    <span class="data">
+                        <a href="/game/playstation-3/you-dont-know-jack/user-reviews?dist=positive">                            <span class="total" style="width:100%;">
+                                <span class="count">6</span>
+                                <span class="distribution positive"> out of 7</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Mixed:</span>
+                    <span class="data">
+                        <a href="/game/playstation-3/you-dont-know-jack/user-reviews?dist=neutral">                            <span class="total" style="width:17%;">
+                                <span class="count">1</span>
+                                <span class="distribution mixed"> out of 7</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Negative:</span>
+                    <span class="data">
+                                                    <span class="total zero_total" style="width:0%;">
+                                <span class="count">0</span>
+                                <span class="distribution negative"> out of 7</span>
+                            </span>
+                                            </span>
+                </div>
+            </li>
+                    </ol>
+		    </div>
+</div>
+
+                                                <ol class="reviews user_reviews">
+                                                            <li id="user_review_1748119" class="review user_review first_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/solutions10">solutions10</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Sep 10, 2011</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv perfect">10</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1748119"><span class="blurb blurb_collapsed">I was very hesitant to get this game, and wouldn't have if I wasn't stuck at home for three weeks. Owning nearly all of the previous YDKJ</span><span class="blurb blurb_expanded">I was very hesitant to get this game, and wouldn't have if I wasn't stuck at home for three weeks. Owning nearly all of the previous YDKJ games on the PC, I've always been a huge fan, and it was the game of choice in my dorm room with friends. Upon hearing of a console release with a four-player limit, episodic format (which I remember from The Ride), and some altered mechanics to make things more fair, I had a very good feeling for this version. However, I was turned off hardcore upon discovering that the Jack Attack was based on the flash version of the game (Huh?) and that there were no gibberish questions, one of my favorite things in the previous games. I can understand not having gibberish questions in a console game, since there's no keyboard, and typing in answers would take forever, and I'll let that slide. So let's run down the list of things that are important here. One, the episodic format, which you likely remember from The Ride more than anything else, is *not* based on themes. In The Ride, every "episode" had a certain theme, like alcohol, or the government, or celebrities, or something like that. It wasn't a perfect system because right off the bat you'd know who'd have the advantage in the episode. For instance, if the episode was about computers, and one of you is a computer technician while another is a political science major with little computer experience, you know right away who's going to win. So, while this is avoided since each episode has no specific theme, it's still misleading to call these things "episodes" when the questions have virtually no connection. Perhaps the biggest change, though, is the way questions are answered, which is vastly different from any other YDKJ game. First of all, all players can answer, rather than a single player buzzing in and earning the prize. It's conceivable that every single person can get the answer right, and there is no special bonus for being the first to answer. Instead, how much money you get from a question isn't based on the question itself; all questions are worth an equal amount of money (doubled in round two), and the amount you get decreases as the clock runs down. It's very simple: If you buzz in with 14 seconds left, you get $1400, or $2800 if it's round two. Buzz in with two seconds left, and you get $200. All multiple-choice questions have an identical value, sans special rounds. This system actually tends to work, especially for wireless controllers, because if only one person buzzed in and answered, that person might just have the advantage of being closer to the TV, or being wired. It's arguably a nice new mechanic that helps ease the game along. The Dis-Or-Dats have also been changed somewhat. In previous versions, there was nothing complicated about them: You had two or three choices for each word or phrase, and you picked the right one to earn money, or picked the wrong one to lose it. This version makes things a little more complicated. First, the amount of money you earn is largely based on how quickly you can answer all the items correctly, and the time left afterward is a bonus in addition to the regular value of the items. The second thing is that other players no longer totally sit out in this round, and now have a role to play. If the main player of the Dis-Or-Dat gets an item wrong, and other players buzz in the correct answer *before* the main player answers, they will all share the money earned, which is considered a "steal". It's great that there is now an opportunity for other players to join in the Dis-Or-Dats, rather than having all but one player sit out completely.<br/><br/>However, not everything here is perfect. Let's just get this out of the way: the flash version of the Jack Attack just isn't as good as the ones that came before it. In fact, it seemed like the Jack Attacks got progressively worse as time went on, and were made less and less intense. And here, we have, in my opinion, the least likable Jack Attack created. It's very busy, not particularly tension-building, and just noisy, but not in a good way. I would have vastly preferred an earlier version of the Jack Attack, maybe even the original, or The Ride. There's also one other really, really huge problem with the Jack Attack: Whereas most games before this one had answers worth $2k each, this one does them at an unreal $4k each, which is simply not right. Keep in mind that questions are all fixed in value, and all things considered, $4k is an obscene amount of money. You can understand, then, that you can absolutely suck at the main game, but come back and win in the Jack Attack. At some point, you just have to draw the line on how much of a game-breaker a Jack Attack can be. One unlucky category and all your hard work goes down the drain. So, some things are lacking, and some things work. Is it worth it? Sure.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">1</span>
+				of 
+				<span class="total_thumbs">2</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_1478345" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/stewiegrffin007">stewiegrffin007</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Feb  9, 2011</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv perfect">10</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1478345"><span class="blurb blurb_collapsed">YDKJ returns with flying colors. If you haven't ever heard of You Don't Know Jack, you're in for a real treat. The game combines witty humor</span><span class="blurb blurb_expanded">YDKJ returns with flying colors. If you haven't ever heard of You Don't Know Jack, you're in for a real treat. The game combines witty humor combining general and pop-culture knowledge into something challenging yet hilarious. The writing really shines here and the host/cast really work the content. I often found myself laughing so hard I couldn't read the question. Great for lonely gamers and party-ers alike. And best of all, it's only 30 smackers. You won't be disappointed.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">2</span>
+				of 
+				<span class="total_thumbs">3</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                    
+                        
+                        <li id="native_top" class="ad_unit review">
+                                    </li>
+                        
+
+
+                                                                                    <li id="user_review_1481357" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/diminisk">diminisk</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Feb 16, 2011</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv perfect">10</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1481357"><span class="blurb blurb_collapsed">Basically, if you loved the original YDKJ, you'll love this new one. It doesn't quite replicate the original, as Impossible Questions are</span><span class="blurb blurb_expanded">Basically, if you loved the original YDKJ, you'll love this new one. It doesn't quite replicate the original, as Impossible Questions are missing, games are only ten questions (+ Jack Attack) long, and answering is tweaked so that everyone's in on every question (this is a change that's probably for the better).<br/><br/>But Cookie's there, the sense of humor that's at least charming even when you're rolling your eyes is there, and best of all, the well-written questions that require a combination of critical thinking and trivia knowledge are there. There's a set number of games, but there's enough that you won't run out any time soon (I've had at least 4 trivia party nights with it so far and I'm less than halfway through them all), plus there'll be DLC games down the road to keep the game going.<br/><br/>I was worried I wouldn't like it as much as I remember loving the original as a kid-- I'm very glad my fears were unfounded.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">2</span>
+				of 
+				<span class="total_thumbs">3</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_1489418" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/Marcopodomus">Marcopodomus</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Mar  2, 2011</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv">9</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1489418"><span class="blurb blurb_collapsed">Simple questions asked in a way that will make you really think about your answer. In fact every episode has a wrong answer that is worth more</span><span class="blurb blurb_expanded">Simple questions asked in a way that will make you really think about your answer. In fact every episode has a wrong answer that is worth more then any correct answer in the game.<br/>If you enjoy trivia and/or loved the original game as I did... for an MSRP of $29.99 there is no reason not to get this remastered 1995 classic...</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">2</span>
+				of 
+				<span class="total_thumbs">2</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_1478189" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/EMelo01">EMelo01</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Feb  9, 2011</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv">8</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1478189"><span class="blurb blurb_collapsed">This game is great for a group of friends. YDKJ has always been one of the best trivia games of all time, so its not a surprise how funny and</span><span class="blurb blurb_expanded">This game is great for a group of friends. YDKJ has always been one of the best trivia games of all time, so its not a surprise how funny and challenging the remake is! It definitely lives up to its original and for the price, you cant go wrong.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">2</span>
+				of 
+				<span class="total_thumbs">2</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_1946557" class="review user_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/ArcticZombie">ArcticZombie</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Nov 18, 2011</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game positive indiv">8</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1946557"><span class="blurb blurb_collapsed">Awesome party game.  If you got 1-3 other friends who can join you, you'll be in for some laughs.  It's a trivia game where the questions are</span><span class="blurb blurb_expanded">Awesome party game.  If you got 1-3 other friends who can join you, you'll be in for some laughs.  It's a trivia game where the questions are either worded or presented in hilarious ways.  There's enough questions here to keep you busy for weeks.  And if you finish, there's 5 "Jack-Packs" available on the network (for a fee).  It's a cheap game, and it shows in its menus and bare-bones options.  But if you're looking for an affordable, fun time with friends (or online) You Don't Know Jack should satisfy.</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">0</span>
+				of 
+				<span class="total_thumbs">0</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                                                                    <li id="user_review_1496833" class="review user_review last_review">
+                    <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                        <div class="review_content" >
+                            <div class="review_section">
+                                <div class="review_stats">
+                                    <div class="review_critic">
+                                        <div class="name">
+                                                                                            <a href="/user/magcakpro">magcakpro</a>
+                                                                                                                                </div>
+
+                                                                                    <div class="date">Mar  9, 2011</div>
+                                                                            </div>
+                                    
+                                    <div class="review_grade">
+                                                
+<div class="metascore_w user medium game mixed indiv">7</div>
+
+                                    </div>
+                                </div>
+                                <div class="review_body">
+                                                        
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_1496833"><span class="blurb blurb_collapsed">While still as fun as the old cram around a keyboard action of the originals, it lacks re-playability.  It is far too easy to memorize</span><span class="blurb blurb_expanded">While still as fun as the old cram around a keyboard action of the originals, it lacks re-playability.  It is far too easy to memorize episodes, and the DLC is too expensive.  $10.00 for only 5 more episodes?</span><span class="blurb_etc">&hellip;</span> <span class="toggle_expand_collapse toggle_expand">Expand</span></span>
+            </div>
+
+                            </div>
+                                                        <div class="review_section review_actions helpful_right">
+                                <ul class="review_actions">
+                                                                            <li class="review_action review_helpful">
+                                            <div class="review_helpful">
+    <div class="rating_thumbs">
+        			<div class="helpful_summary thumb_count">
+				<a href="/login">
+				<span class="total_ups">1</span>
+				of 
+				<span class="total_thumbs">2</span>
+				users found this helpful
+                </a>
+			</div>
+                <div style="clear:both;"></div>
+    </div>
+</div>
+                                        </li>
+                                                                                                                                            </ul>
+                            </div>
+                            
+                                                    </div>
+                    </div></div></div></div>
+                </li>
+                                            </ol>
+                                                                </div>
+    </div>
+
+    </div>
+</div>
+
+
+
+<script type='text/javascript'>
+  
+  //override amzn vars
+  var pageGuid = window.utag_data ? window.utag_data._pageViewGuid : "";
+  window.amzn_assoc_subtag = pageGuid;
+  window.amzn_assoc_title = "Shop Related Deals";
+  window.amzn_assoc_rows = "1";
+  window.amzn_assoc_rating = "false";
+  window.amzn_assoc_design = "standard_grid";
+  
+</script>
+
+<link rel="stylesheet" href="/css/global/amazon.src.css" type="text/css"/>
+
+<div id="tv-game-music-amazon-shopping-unit">
+  <div id="amzn-assoc-ad-59f8e9e4-5bed-4576-aacb-15693482f182" class="subrow pad_top2"></div>
+
+  <script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=59f8e9e4-5bed-4576-aacb-15693482f182"></script>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+                                                                </div>
+                            <div id="side" class="col side_col">
+                    
+                        
+                        <div id="mpu_plus_top" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_plus_top = googletag.defineSlot("/8264/aw-metacritic/games",[[300,250],[300,600]], "mpu_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("mpu_plus_top");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+                                                <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_native_top = googletag.defineSlot("/8264/aw-metacritic/games",[[11,11], 'fluid'], "native_top").addService(googletag.pubads()).setTargeting("pos", "top").setTargeting('strnativekey', '05786b87');
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("native_top");
+                                                            </script>
+                                
+
+
+
+
+<div class="module list_rankings contain_module">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Awards & Rankings</h2></div></div>
+    <div class="body">
+        <table class="rankings">
+                            
+                                    
+                                                                                                    
+                
+                                                                        
+                
+                                    
+                                            
+                                                    
+                <tr>
+                    <td class="ranking_icon">
+                                                    <a href="/browse/games/score/metascore/year/ps3/filtered?sort=desc&year_selected=2011">
+                                                <i class="fa fa-trophy"></i>
+                        <div class="shield">46</div>
+                                                    </a>
+                                            </td>
+                    <td class="ranking_wrap">
+                        <div class="ranking_title">
+                            
+                                                                                        <a href="/browse/games/score/metascore/year/ps3/filtered?sort=desc&year_selected=2011">#46 Best PS3 Game of 2011</a>
+                                                        
+                            
+                                                    </div>
+                    </td>
+                </tr>
+                 </table>
+    </div>
+</div>
+
+
+    <div class="module supplements_module" id="supplementary-nav">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Essential Links</h2></div></div>
+    <div class="body">
+        <div class="body_wrap">
+                        <div id="supplementary-items" class="supplements supplement_links">
+                <ol class="supplements supplement_links">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;1'}" href="https://www.metacritic.com/browse/games/release-date/available/ps3/date?view=condensed">New PS3 Releases by Date</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;2'}" href="https://www.metacritic.com/browse/games/release-date/available/ps3/name?view=condensed">New PS3 Releases by Title</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;3'}" href="https://www.metacritic.com/browse/games/release-date/available/ps3/metascore?view=condensed">Best Recent Releases for PS3</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;4'}" href="https://www.metacritic.com/browse/games/release-date/coming-soon/ps3/date?view=condensed">Upcoming PS3 Release Calendar</a>
+                            </li>
+                                                                                                                                                                        <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;6'}" href="https://www.metacritic.com/browse/games/score/metascore/all/ps3?sort=desc">All-Time High Scores - PS3</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;7'}" href="https://www.metacritic.com/browse/games/title/ps3/a?num_items=100">All PS3 Games: A-Z Index</a>
+                            </li>
+                                                                                                        </ol>
+            </div>
+                                    <div id="supplementary-articles" class="supplements supplement_articles">
+                <ol class="supplements supplement_articles">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;1'}" href="https://www.metacritic.com/feature/game-publisher-rankings-for-2014-releases">2015 Game Publisher Rankings</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;2'}" href="https://www.metacritic.com/feature/2015-videogame-preview">2015 Videogame Preview</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;3'}" href="https://www.metacritic.com/feature/best-video-games-of-2014">Best Games of 2014</a>
+                            </li>
+                                                            </ol>
+                <div class="more_supplements more_articles">
+                    
+                    <a class="dw_tag {'tag':'supplementary-nav;more-articles'}" href="/feature">More articles &raquo;</a>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+
+
+
+                        
+                        <div id="recirculation_ad" class="ad_unit pad_btm1 pad_top1">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_recirculation_ad = googletag.defineSlot("/8264/aw-metacritic/games",[300,249], "recirculation_ad").addService(googletag.pubads()).setTargeting("pos", "recirculation");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("recirculation_ad");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+
+
+
+
+
+                        
+                        <div id="mpu_bottom" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_bottom = googletag.defineSlot("/8264/aw-metacritic/games",[300,250], "mpu_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("mpu_bottom");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                    </div>
+    </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+                        
+                        <div id="leader_bottom" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_bottom = googletag.defineSlot("/8264/aw-metacritic/games",[[728,90],[970,66],[728,92],[970,250],[7,7]], "leader_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("leader_bottom");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+            </div>
+
+                        
+                        
+                        <div id="intromercial" class="ad_unit">
+                                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_intromercial = googletag.defineOutOfPageSlot("/8264/aw-metacritic/games",
+                                    "intromercial").addService(googletag.pubads());
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("intromercial");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+            
+    
+    <div id="mastfoot">
+            <footer id="bottom_footer">
+    <div id="providers">
+	<a href="https://www.allmusic.com" target="_blank">Music title data, credits, and images provided by <span>AMG</span></a>
+	<span class="link_divider">|</span><a href="https://www.imdb.com" target="_blank">Movie title data, credits, and poster art provided by <span>IMDb</span></a>
+	<span class="link_divider">|</span><a href="https://www.internetvideoarchive.com" target="_blank">Video and Images provided by <span>IVA</span></a>
+    <div id="trademark">
+        We Deal With Criticism<sup>&reg;</sup>&nbsp;
+	</div>
+</div>
+
+
+            <div class="site_links upper">
+                    <a href="https://www.metacritic.com/movie">
+                <span>
+                                            Movies
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/tv">
+                <span>
+                                            TV
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/music">
+                <span>
+                                            Music
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/playstation-4">
+                <span>
+                                            PS4
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/xbox-one">
+                <span>
+                                            XboxOne
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/switch">
+                <span>
+                                            Switch
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/pc">
+                <span>
+                                            PC
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/wii-u">
+                <span>
+                                            WiiU
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/3ds">
+                <span>
+                                            3DS
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/playstation-vita">
+                <span>
+                                            PS Vita
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/ios">
+                <span>
+                                            iOS
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/feature">
+                <span>
+                                            Reports
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/rss">
+                <span>
+                                            RSS Feeds
+                                    </span>
+            </a>
+                </div>
+    
+    <div class="pad_top1 pad_btm1">
+        <div class="social_round">
+            <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="about_cbs">
+        <div class="footer_about_links">
+            <a class="first" href="https://www.cbsinteractive.com" target="_blank">About CBS Interactive</a>
+            <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/careers/" target="_blank">Jobs</a>
+            <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/advertise/" target="_blank">Advertise</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/faq">FAQ</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/about-metacritic">About Metacritic</a>
+            <span class="link_divider">|</span><a href="https://cbsi.secure.force.com/CBSi/knowledgehome?referer=metacritic.com">Help & Support</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/contact-us">Contact</a>
+        </div>
+        <div class="footer_about_links">
+            <span><a href="https://ca.privacy.cbs" target="_blank">California Privacy/Info We Collect</a></span>
+            <span class="link_divider">|</span><span><a href="https://ca.privacy.cbs/donotsell" target="_blank">California Do Not Sell My Info</a></span>
+            <span class="link_divider">|</span><span id="footer_privacy"><a href="https://legalterms.cbsinteractive.com/privacy" target="_blank">Privacy Policy</a></span>
+            <span class="link_divider">|</span><span id="footer_terms"><a href="https://cbsi.secure.force.com/CBSi/articles/FAQ/CBSi-Terms-of-Use?template=template_tougl&referer=tougl.com&data=&cfs=default" target="_blank">Terms of Use</a></span>
+                            <span class="link_divider">|</span><span id="footer_attribution"><a href="https://www.gamespot.com/" target="_blank">Gamespot</a></span>
+                    </div>
+        <div id="footer_rights" class="pad_btm2">
+            &copy; 2019 CBS Interactive Inc. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    
+    <div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
+    <script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+
+</div>
+
+<div id="site_scripts" class="dw_tracking">
+     
+<script type="text/javascript" src="/js/omniture/uuid.js"></script>
+<script type="text/javascript">
+    
+    if (self != top) {
+        top.location = self.location;
+    }
+    var MC_UUID = uuid.v1();
+</script>
+
+                                                                                                                                                                                                                                                                                                    
+    
+
+ 
+<script language="JavaScript" type="text/javascript">
+    
+    var utag_data = {
+        isDev:0,
+            
+                siteType:"desktop web",
+                deviceType:"desktop",
+                siteSection:"games",
+                pageType:"product_overview",
+                pageFindingMethod:"External",
+                session: MetaC.adSession() + ':' + MetaC.adSubses(),
+                gameGenre:"Miscellaneous|Trivia / Game Show|Trivia / Game Show",userId:"",userState:"not authenticated",userType:"registered",gameId:"mc-game-157958",gameTitle:"You Don\'t Know Jack",gamePlatform:"PlayStation 3",bkPath:"/8264/aw-metacritic/games",_test:"",pageViewGuid:MC_UUID
+    };
+    
+                        
+            
+            window.om_lead_media = {
+                mediaType: "Game",
+                mediaId: "mc-game-157958",
+                mediaTitle: "You Don\'t Know Jack"
+            };
+            
+            
+    
+    
+    if ( window.eventAmazonBuyView ) {
+        utag_data.eventAmazonBuyView = 1;
+    }
+    if ( window.eventAmazonPivView ) {
+        utag_data.eventAmazonPivView = 1;
+    }
+    
+    
+    
+    
+
+    
+</script>
+
+
+
+<script type="text/javascript">
+    
+    
+    var __pv = MetaC.handleGooglePageView();
+    googletag.cmd.push(function() {
+        
+        if (MC_USER_LOGGED_IN){
+            googletag.pubads().setTargeting("user", "registered");
+        }else{
+            googletag.pubads().setTargeting("user", "anon");
+        }
+        googletag.pubads().setTargeting("ptype", "product_overview");
+                    googletag.pubads().setTargeting("gameId", "game-157958");
+                    googletag.pubads().setTargeting("game", "you-dont-know-jack");
+                    googletag.pubads().setTargeting("con", "playstation-3");
+                    googletag.pubads().setTargeting("franchise", "You-Don\'t-Know-Jack");
+                    googletag.pubads().setTargeting("genre", "miscellaneous, trivia-game-show, ");
+                    googletag.pubads().setTargeting("score", "82");
+                            googletag.pubads().setTargeting("test", "mcold");
+                
+        googletag.pubads().setTargeting("vguid", MC_UUID);
+        googletag.pubads().setTargeting("session", MetaC.adSession());
+        googletag.pubads().setTargeting("subses", MetaC.adSubses());
+        googletag.pubads().setTargeting("env", "prod");
+                        var parts = window.location.hash.split("=");
+        if ( parts.length > 1 && parts[0] == '#ftag' ) {
+            googletag.pubads().setTargeting("ftag",parts[1]);
+        }
+        
+                
+        
+        if ( window.I11C) {
+            if (window.I11C.Morph && window.I11C.Morph === 1) {
+                utag_data.adBlockRecovery = "unblocked";
+                utag_data.adsAreBlocked = "true";
+
+                var geo = MetaC.Cookie.get('il_geo');
+                if ( geo ) {
+                    geo = MetaC.Cookie.ilParse(geo);
+                    if ( geo && geo.postal_code && geo.country_code ) {
+                        googletag.pubads().setLocation(geo.postal_code + ',' + geo.country_code)
+                    }
+                }
+            } else {
+                utag_data.adBlockRecovery = 'instart_noop';
+                utag_data.adsAreBlocked = "not_blocked";
+            }
+        } else {
+            utag_data.adBlockRecovery = 'no_instart';
+            utag_data.adsAreBlocked = "not_blocked";
+        }
+
+        googletag.pubads().setTargeting("pv", __pv+""); // must be a string
+
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+    });
+    //
+    // get ad preferences and load ads
+    // npa is already set if gtag was present
+    //
+    window.cbsoptanon.onAdsReady(function(_cbsoptanon, adOpts) {
+        googletag.cmd.push(function() {
+            googletag.enableServices();
+            if (!(window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)) {
+                googletag.pubads().refresh();
+            }
+        });
+    });
+    
+    
+
+    
+    
+    if ( MetaC && MetaC.Video ) {
+        
+                    MetaC.Video.setIMATargeting("gameId", "game-157958");
+                    MetaC.Video.setIMATargeting("game", "you-dont-know-jack");
+                    MetaC.Video.setIMATargeting("con", "playstation-3");
+                    MetaC.Video.setIMATargeting("franchise", "You-Don\'t-Know-Jack");
+                    MetaC.Video.setIMATargeting("genre", "miscellaneous, trivia-game-show, ");
+                    MetaC.Video.setIMATargeting("score", "82");
+                    
+    }
+    
+</script>
+
+
+
+
+
+    <script type="text/javascript" src="https://urs.metacritic.com/sdk/urs.js"></script>
+
+
+    <script type="text/javascript">
+        if ( window.MetaC && MetaC.URS ) {
+            MetaC.URS.config(227, false);
+        }
+    </script>
+
+
+
+
+    
+<script type="text/javascript">
+    window.cbsoptanon.onScriptsReady(function(cmp) {
+        //
+        // fire off tealium if the banner is not present after
+        // onetrust has loaded. (cbsoptanon has a promise polyfill)
+        //
+        cmp.ot.awaitInitialConsent(function() {
+            (function(a,b,c,d){
+            a='//tags.tiqcdn.com/utag/cbsi/metacriticsite/prod/utag.js';
+            b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+            a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+            })();
+        });
+    });
+</script>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function(){
+                MetaC.checkOmniEvents();
+            }, 300);
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+    
+    dwVars = {"siteId":"50","onId":"12459","ptId":"6346","ctype":"entitytype;entityid","cval":"game;157958"};
+    if (typeof DW == "object"){
+        DW.pageParams = dwVars;
+        DW.regSilo = '12';
+        DW.clear();
+    }
+</script>
+
+
+
+<script>
+    var cbsiApexGlobal = {
+        'SITE': dwVars.siteId,
+        'NODE': dwVars.onId,
+        'PTYPE':dwVars.ptId
+    };
+</script>
+
+
+
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22577913-5']);
+    _gaq.push(['_setCustomVar',1,'PageType',dwVars.ptId,3]);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['nT._setAccount', 'UA-27653683-1']);
+    _gaq.push(['nT._setAllowLinker', true]);
+    _gaq.push(['nT._setSampleRate', '1']);
+    _gaq.push(['nT._trackPageview']);
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>
+    gdprConsentCallback('facebook', function () {
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '123113677890173',
+                version    : 'v2.6',
+                channelUrl : 'https://www.metacritic.com/static/fbchannel.html',
+                status     : true,
+                xfbml      : true,
+                cookie     : true
+                });
+            MetaC.FB.initialized();
+            };
+        
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, {}, 'social');
+    
+</script>
+
+
+
+<script>
+    gdprConsentCallback('twitter', function () {
+        window.twttr = (function (d,s,id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+        js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));
+
+        twttr.ready(function (twttr) {
+            MetaC.Twitter.initialized();
+        });
+    }, {}, 'social');
+</script>
+
+
+
+
+
+<script>
+    //
+    // display the google ads now that the html is finished processing
+    //
+    // get ad preferences and load ads
+    // npa is already set if gtag was present
+    //
+    window.cbsoptanon.onAdsReady(function(_cbsoptanon, adOpts) {
+        googletag.cmd.push(function() {
+            googletag.enableServices();
+            MetaC.displayAds();
+            if (window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)
+                MetaC._refreshWithLightSpeed(window.metac_ads_pushdisplay);
+        });
+    });
+</script>
+
+
+
+
+<script>
+    
+    
+    gdprConsentCallback('taboola', function () {
+        if ( window._taboola && window.mcwait_taboola == null ) {
+            _taboola.push({flush: true});
+        }
+    }, {}, 'targeting', 'Ads');
+    
+</script>
+
+
+<div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
+<script type="text/plain" class="optanon-category-2" async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+
+
+
+
+
+
+
+<script type='text/javascript'>
+    
+    // immediate function to scope initialization
+    (function(){
+        var mc_chartbeat_page_types = ["front_door", "section_door", "article", "image_gallery", "product_overview", "product_tvepisode", "product_tvseason", "list_page"];
+        var mc_utag_page_type = "product_overview";
+
+        // only load chartbeat based on page_type
+        if (mc_chartbeat_page_types.includes(mc_utag_page_type)){
+            // If its an image gallery, it gets convaluted, see if you have a firstPhotoIdx, if you do not its a door
+            // We say /pictures/recommend is a image_gallery in utag, when its really a door
+            if (mc_utag_page_type == "image_gallery"){
+                                    mc_utag_page_type = "section_door";
+                            }
+            if (window.VideoStrategy){
+                window['_cbv_strategies'] = window['_cbv_strategies'] || [];
+                window['_cbv_strategies'].push(window.VideoStrategy);
+            }
+
+            var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+            _sf_async_config.uid = 65713;
+            _sf_async_config.domain = 'metacritic.com';
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.flickerControl = false;
+            _sf_async_config.useCanonicalDomain = true;
+            _sf_async_config.sections = mc_utag_page_type;
+            // make sure its an article, image galleries are stories and will have an author, but we only tag
+            // authors name(s) on article pages, on other pages, just pass empty string
+            if (mc_utag_page_type == "article"){
+                _sf_async_config.authors = '';
+            } else {
+                _sf_async_config.authors = '';
+            }
+
+            var _cbq = window._cbq = (window._cbq || []);
+
+                            _cbq.push(['_acct', 'anon']);
+            
+            window._sf_endpt = (new Date()).getTime();
+        }
+    })();
+    
+</script>
+<script type="text/plain" class="optanon-category-2" async src="https://static.chartbeat.com/js/chartbeat_video.js" charset="utf-8"></script>
+
+
+
+
+    
+    
+    <script>
+    	if (typeof cbsiLoadOffer == "function"){
+                cbsiLoadOffer(cbsiApexGlobal,1000);
+        }
+    </script>
+    
+</div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":2052,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
